@@ -1,0 +1,8 @@
+name: peptorama
+dependencies:
+  - python=3.12
+  - pytest
+  - pytest-cov
+  - pip
+  - pip:
+    - -r requirements.txt
