@@ -2,24 +2,31 @@
 
 A list of manually curated pyoverdines in which pyoverdine structures have been checked against the corresponding papers. The data is a compilation from existing lists and manual searches. 
 
-## Get started
+## File overview
 
-### Installation
+| File | Description |
+|------|-------------|
+| `data/pyoverdine_peptide_chains.csv` | One row per pyoverdine peptide chain |
+| `data/references.csv` | Full citations for the `reference` column |
 
-Pyoverdines requres Python and several dependancies. For installation, we
-recommend using conda to set up an environment. This can be set up using the 
-provided `environment.yml`. To set this up, follow these steps:
+## Column descriptions
 
-Clone the repository:
-```
-git clone https://github.com/MarkCalcott/pyoverdines
-cd pyoverdines
-```
+| Column | Type | Description | Example |
+|--------|------|-------------|---------|
+| `peptide` | string | Amino acid sequence of the peptide chain, N- to C-terminus | `Ala-Lys-Gly-Gly-OH-Asp-...` |
+| `species` | string | Producing species as reported in the source | `P. fluorescens` |
+| `strain` | string | Strain designation as reported in the source | `ATCC 17400` |
+| `group` | integer | Grouping according to [define scheme and cite it] | `1` |
+| `class` | string (Roman numeral) | Classification according to [define scheme and cite it] | `II` |
+| `reference` | integer | ID of the source publication; see `references.csv` | `3` |
 
-Create and activate the conda environment
-```
-conda env create -f environment.yml
-conda activate pyoverdine
-```
+## Peptide notation
 
-Then open the Jupyter notebook in the notebooks folder and run the cells.
+See paper for nomenclature.
+
+## References
+
+| ID | Citation | DOI |
+|----|----------|-----|
+| 1 | Author A. et al. (Year). Title. *Journal*, vol, pages. | 10.xxxx/xxxxx |
+| 2 | ... | ... |
