@@ -1,0 +1,84 @@
+peptide,species,strain,group,class,reference
+Ala-Asn-Dab-OH-His-Gly-Gly-Ala-Thr-Ser-(OH-Orn),P. entomophila,L48,1,II,1
+Ala-Lys-Gly-Gly-OH-Asp-Gln-Dab-Gly-Ala-(OH-Orn),Pseudomonas sp.,3C14,1,II,3
+D-Ala-D-Lys-Gly-Gly-L-OH-Asp-D-Gln/L-Dab-Gly-L-Ser-(L-OH-Orn),P. fluorescens,1.3,1,II,2
+D-Ala-D-Lys-Gly-Gly-L-OH-Asp-D-Gln/L-Dab-L-Ser-D-Ala-(L-OH-Orn),P. fluorescens,ATCC 17400,1,II,4
+D-Ala-D-Lys-Gly-Gly-D-OH-Asp-D-Gln-D-Ser-L-Ala-D-Ala-D-Ala-L-Ala-(L-OH-Orn),P. fluorescens,strain ii,1,II,5
+D-Ala-D-Lys-Gly-Gly-D-OH-Asp-D-Gln-D-Ser-L-Ala-Gly-D-Thr-(L-OH-Orn),P. fluorescens,51W,1,II,6
+D-Ala-L-Lys-L-Thr-D-Ser-L-Ac-OH-Orn-(L-OH-Orn),P. aptata,,1,II,7
+Ala-Orn-OH-Asp-Ser-Orn-Ser-(OH-Orn),P. libanensis,96-195,1,II,8
+Ala-Val-OH-His-Asp-Cit-Ser-Ala-Ala-(OH-Orn),Pseudomonas sp.,s3d06,1,II,3
+L-Asp-L-Ac-OH-Orn/L-Dab-L-Thr-D-Ala-L-Thr-L-Thr-D-Gln-(L-OH-Orn),P. putida,3b,1,II,8
+L-Asp-L-Ala-L-Asp-D-Ac-OH-Orn-L-Ser-(L-OH-Orn),P. putida,BTP1,1,II,9
+Asp-Arg-Ac-OH-Orn-Lys-Ser-Asp-(OH-Orn),Pseudomonas sp.,LBSA1,1,II,8
+Asp-Arg-Fo-OH-Orn-Gln-Fo-Ser-Asp-(OH-Orn),P. donghuensis,P482,1,II,10
+Asp-Lys-Ac-OH-Orn-Ala-Ser-Ser-Gly-Ser-(OH-Orn),P. monteilii,Lille 1,1,II,8
+L-Asp-L-Lys-D-Ac-OH-Orn-L-Thr-Ser-Ser-Gly-Ser-Ser-(D-OH-Orn),P. putida,CFML 90-44,1,II,16
+L-Asp-L-Lys-L-Thr-D-OH-Asp-L-Thr-D-Thr-(L-OH-Orn),P. putida,CFML 90-33,1,II,17
+L-Asp-L-Orn-D-OH-Asp/L-Dab-Gly-L-Ser-(L-OH-Orn),P. putida,G4R,1,II,18
+L-Asp-D-Ser-L-Hse-Gly-D-OH-Asp-L-Ser-D-Cit-L-Hse-D-Ac-OH-Orn-(L-Hse),Azotobacter vinelandii,strain D,1,II,19
+L-Asp-L-Ser-L-Ser-D-Ac-OH-Orn-D-Lys-D-Lys-(L-OH-Orn),P. fulva,NBRC16639,1,II,21
+L-Asp-L-eLys-D-OH-Asp-D-Ser-L-Ala-D-Ser-(L-OH-Orn),P. putida,biovar B CFBP 11370,1,II,11
+L-Asp-L-eLys-D-OH-Asp-L-Ser-Gly-D-Thr-L-Lys-(L-OH-Orn),P. putida,CFML 90-51,1,II,13
+Asp-eLys-OH-Asp-Ser-Ser-Thr-Thr-Thr-(OH-Orn),Pseudomonas sp.,HR6,1,II,8
+L-Asp-L-eLys-D-OH-Asp-Ser-L-Thr-D-Ala-D-Glu-Ser-(L-OH-Orn),P. putida,589 (DSM 50202),1,II,14
+L-Asp-L-eLys-D-OH-Asp-L-Ser-D-Thr-D-Ala-L-Thr-D-Lys-(L-OH-Orn),P. putida,CFBP 2461,1,II,12
+Asp-eLys-OH-Asp-Ser-Thr-Ser-Lys-(OH-Orn),Pseudomonas sp.,3A06,1,II,15
+D-Lys-D-Ac-OH-Orn-L-Ala-Gly-D-Thr-L-Ser-(L-OH-Orn),P. fluorescens,PL8,1,II,23
+D-Lys-D-Ac-OH-Orn-Gly-D-Thr-L-Thr-L-Gln-Gly-D-Ser-(D-OH-Orn),P. fluorescens,A6 (CFBP 2392),1,II,24
+Lys-OH-Asp-Ser-Ser-Ser-(OH-Orn),P. putida,GS43,1,II,8
+Orn-Asp-OH-Asn-Thr-Ac-OH-Orn-Ser-(OH-Orn),Pseudomonas sp.,taiwanensis VLB120,1,II,25
+D-Ser-D-Ac-OH-Orn-L-Ala-Gly-D-Thr-L-Ala-(L-OH-Orn),P. fluorescens,PL7,1,II,23
+D-Ser-D-Ac-OH-Orn-Gly-L-Thr-D-Thr-L-Gln-Gly-D-Ser-(D-OH-Orn),Pseudomonas sp.,SXM-1,1,II,27
+D-Ser-D-Ac-OH-Orn-Gly-D-Thr-L-Thr-L-Gln-Gly-D-Ser-(OH-Orn),P. aureofaciens,,1,II,26
+Ser-Ala-Thr-Lys-Orn-Ac-OH-Orn-Thr-Thr-Ala-Ser-Thr-Ala-Ala-(OH-Orn),Pseudomonas sp.,IB3,1,II,8
+Ser/Dab-Gly-L-Ser-D-OH-Asp-L-Ala-Gly-D-Ala-Gly-(L-OH-Orn),P. fluorescens,CCM 2798,1,II,28
+Ser/Dab-Thr-Ser-Ac-OH-Orn-(OH-Orn),P. putida,,1,II,29
+D-Ser-D-Fo-OH-Orn-L-Orn-Gly-D-Thr-L-Ser-(L-OH-Orn),P. aeruginosa,ATCC 27853,1,II,31
+D-Ser-L-Lys-D-Ala-L-Ac-OH-Orn-L-Thr-D-Ala-Gly-D-Gln-D-Ala-Ser-Ser-(L-OH-Orn),Pseudomonas sp.,,1,II,32
+Ser-Lys-Ala-Ser-Ser-Ac-OH-Orn-Ser-Ser-(OH-Orn),P. fluorescens,G153,1,II,8
+Ser-Lys-OH-Asp-Ser-Orn-Ser-(OH-Orn),Pseudomonas sp.,G85,1,II,8
+D-Ser-L-Lys-L-Ser-D-Ser-L-Thr-D-Ser-L-Ac-OH-Orn-L-Thr-D-Ser-(D-OH-Orn),P. tolaasii,NCPPB 2192,1,II,28
+Ser-Lys-Ser-Ser-Thr-Thr-Ac-OH-Orn-Ser-Ser-(OH-Orn),P. putida,G168,1,II,8
+Ser-Lys-Ser-Thr-Ala-Ac-OH-Orn-(OH-Orn),Pseudomonas sp.,3D03,1,II,3
+D-Ser-L-Orn-L-OH-Asp-L-Ser-L-Ser-D-Ser-(L-OH-Orn),Pseudomonas sp.,2908,1,II,34
+L-Ser-D-Ser-L-Hse-Gly-D-OH-Asp-Hse-Hse-Hse-D-Bu-OH-Orn-(L-Hse),Azotobacter vinelandii,ATCC 12837,1,II,35
+L-Ser-L-Thr-D-Ser-L-Orn-L-OH-Asp-D-Gln/L-Dab-L-Ser-D-Thr-(L-OH-Orn),P. fluorescens,Gwose,1,II,61
+D-Ser-L-Val-L-OH-Asp-Gly-L-Thr-D-Ser-(L-OH-Orn),P. fluorescens,BTP2,1,II,36
+D-Ser-L-eLys-L-OH-His-D-Thr-L-Ser-(L-OH-Orn),P. fluorescens,9AW,1,II,30
+L-eLys-D-OH-Asp-L-Ala-D-Thr-L-Ala-(D-OH-Orn),P. fluorescens,B10,1,II,22
+D-Ser-L-Ala-L-Ac-OH-Orn-(L-Orn-D-Asp-L-Ac-OH-Orn-L-Ser),P. fluorescens,G173,2,I,37
+D-Ser-L-Arg-D-Ser-L-Fo-OH-Orn-(L-Lys-L-Fo-OH-Orn-L-Thr-L-Thr),P. aeruginosa,PAO1 (ATCC 15692),2,I,8
+D-Ser-L-Lys-L-Fo-OH-Orn-(L-Lys-D-Fo-OH-Orn-L-Glu-L-Ser),Pseudomonas sp.,CFML 96-188,2,I,38
+Ser-Lys-Fo-OH-Orn-Ser-Ser-Gly-(Lys-Fo-OH-Orn-Ser-Ser),P. rhodesiae,CFML 92-104 (Lille 25),2,I,8
+D-Ser-L-Lys-Gly-L-Fo-OH-Orn-(L-Lys-L-Fo-OH-Orn-L-Ser),P. fluorescens ,A506,2,I,42
+D-Ser-L-Lys-Gly-L-Fo-OH-Orn-(L-Lys-D-Fo-OH-Orn-L-Ser),P. fluorescens,SBW25,2,I,39
+D-Ser-L-Lys-Gly-L-Fo-OH-Orn-D-Ser-L-Ser-Gly-(L-Lys-D-Fo-OH-Orn-L-Glu-L-Ser),P. fluorescens,12,2,I,43
+D-Ser-L-Lys-Gly-L-Fo-OH-Orn-L-Ser-D-Ser-Gly-(L-Lys-D-Fo-OH-Orn-L-Ser),P. fluorescens,18.1,2,I,44
+Ser-Lys-Gly-Fo-OH-Orn-Ser-Ser-Gly-(Orn-Fo-OH-Orn-Ser),P. fluorescens,DSM 50106,2,I,8
+Ser-Orn-Fo-OH-Orn-(L-Lys-Fo-OH-Orn-Glu-Ser),Pseudomonas sp.,D47,2,I,45
+D-Ser-L-Orn-L-Fo-OH-Orn-D-Ser-L-Ser-(L-Lys-L-Fo-OH-Orn-L-Ser),Pseudomonas spp.,96-318,2,I,46
+D-Ser-L-Ser-L-Fo-OH-Orn-(L-Lys-L-Fo-OH-Orn-L-Lys-L-Ser),Pseudomonas spp.,96-312,2,I,46
+D-Ser-L-Ser-L-Fo-OH-Orn-Ser-Ser-(L-Lys-L-Fo-OH-Orn-L-Lys-L-Ser),Pseudomonas sp.,CFML 95-275,2,I,47
+Ser-Ser-Fo-OH-Orn-Ser-Ser-(Lys-Ser-Fo-OH-Orn),Pseudomonas sp.,G76,2,I,8
+Ala-Lys-Dab-OH-Asp-(Thr-Gly-OH-Asp-Gly-Thr-Thr),P. putida,G172,3,I,8
+L-Asn-D-Fo-OH-Orn-L-Lys-(L-Thr-Ala-Ala-D-Fo-OH-Orn-L-Lys),P. fluorescens,ng,3,I,48
+L-Asp-L-Ala-D-Ac-OH-Orn-L-Thr-Gly-(L-Thr-L-Hse-D-OH-Asp-L-Ser-L-Orn-L-Hse-L-Ser),P. putida,W15Oct28,3,I,49
+L-Asp-D-Fo-OH-Orn-L-Lys-(L-Thr-Ala-Ala-D-Fo-OH-Orn-Ala),P. chlororaphis,D-TR133,3,I,50
+L-Asp-D-Fo-OH-Orn-L-Lys-(L-Thr-L-Ala-D-Ala-D-Fo-OH-Orn-L-Lys),P. protegens,Pf-5,3,I,42
+Asp-Fo-OH-Orn-Lys-(Thr-Ala-Ala-Lys-Fo-OH-Orn-Lys),Pseudomonas sp.,3B19,3,I,15
+D-Ser-D-Ac-OH-Orn-L-Ala-Gly-(D-Ser-L-Ala-L-OH-Asp-L-Thr),P. putida,ATCC 39167,3,I,12
+D-Ser-D-Ac-OH-Orn-L-Ala-Gly-(D-Ser-L-Ser-L-OH-Asp-L-Thr),P. fluorescens,A225,3,I,12
+L-eLys-D-OH-Asp-L-Thr-(L-Thr-Gly-D-OH-Asp-L-Ser),P. cichorii,LMG 8401,3,I,52
+L-eLys-D-OH-Asp-L-Thr-(L-Thr-L-Ser-D-OH-Asp-L-Ser),P. syringae,,3,I,52
+Ala-Ac-OH-Orn-Ala-Gly-Ser-Ala-OH-Asp-Thr,Pseudomonas sp.,S3g01,4,III,15
+Ala-Ac-OH-Orn-Gly-Gly-Ser-Ala-OH-Asp-Thr,Pseudomonas sp.,3D19,4,III,15
+Ala-Ac-OH-Orn-Orn-Ser-Ser-Ser-Arg-OH-Asp-Thr,P. fluorescens,Pf0-1,4,III,8
+D-Ala-L-Orn-OH-Asp-L-Dab-L-Ac-OH-Orn-L-Lys,Pseudomonas sp.,6.1,4,III,55
+L-Asp-D-Bu-OH-Orn-D-Dab-L-Thr-Gly-Ser-Ser-L-OH-Asp-L-Thr,P. putida,C,4,III,56
+L-Hse-D-Hse/L-Dab-D-Ac-OH-Orn-D-Ser-L-Ac-OH-Orn,Azomonas macrocytogenes,ATCC 12334,4,III,57
+Ser-Ac-OH-Orn-Ala-Gly-Thr-Gly-OH-Asp-Lys,Pseudomonas sp.,s3e15,4,III,3
+D-Ser/L-Dab-Fo-OH-Orn-D-Gln-Fo-OH-Orn-Gly,P. aeruginosa,R',4,III,58
+D-Ser/L-Dab-L-Fo-OH-Orn-L-Gln-D-Gln-D-Fo-OH-Orn-Gly,P. aeruginosa,Pa6 (R),4,III,59
+D-Ser-L-Fo-OH-Orn-D-Lys-L-Thr-D-Asn-Gly-L-Ser-L-Fo-OH-Orn,Pseudomonas sp.,Ag1,4,III,60
+Ser-Ser-Gln-Dab-OH-Asp-Thr-Gly-OH-Asp-Gln-Gln-Gly,Pseudomonas sp.,'3E13,4,III,3
