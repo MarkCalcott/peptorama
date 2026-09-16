@@ -1,13 +1,13 @@
 # Pyoverdines
 
-A list of manually curated pyoverdines in which pyoverdine structures have been checked against the corresponding papers. The data is a compilation from existing lists and manual searches.
+A list of manually curated pyoverdines in which pyoverdine structures have been checked against the corresponding papers. The data is a compilation from existing lists and manual searches. It represents the known peptides when we compared known with unknown pyovedines.
 
 ## File overview
 
 | File                            | Description                               |
 | ------------------------------- | ----------------------------------------- |
 | `pyoverdine_peptide_chains.csv` | One row per pyoverdine peptide chain      |
-| `references.csv`                | Full citations for the `reference` column |
+| `references.md`                | Full citations for the `reference` column |
 
 ## Column descriptions
 
