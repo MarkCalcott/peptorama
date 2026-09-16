@@ -1,6 +1,6 @@
 import pytest
 
-from peptworkz.info_codes import (
+from peptorama.processing.info_codes import (
     SeverityLevel,
     InfoCode,
     InfoCollector,
@@ -51,7 +51,6 @@ class TestInfoCode:
         assert InfoCode.USER_INBUILT_MONOMER_DIFFERENT.code == 2011
         assert InfoCode.SMILES_NOT_GENERATED.code == 2012
         assert InfoCode.NO_PEPTIDE_OR_SMILES.code == 2013
-        
 
     def test_level(self):
         assert InfoCode.NO_INPUT.level.value == "critical"
@@ -72,7 +71,6 @@ class TestInfoCode:
         assert InfoCode.USER_INBUILT_MONOMER_DIFFERENT.level.value == "warning"
         assert InfoCode.SMILES_NOT_GENERATED.level.value == "warning"
         assert InfoCode.NO_PEPTIDE_OR_SMILES.level.value == "error"
-        
 
 
 # --- Renderer factories ---

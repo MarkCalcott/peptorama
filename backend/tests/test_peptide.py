@@ -1,6 +1,6 @@
 import pytest
 
-from peptworkz.validate import Peptide
+from peptorama.processing.validate import Peptide
 
 
 class TestPeptideInit:

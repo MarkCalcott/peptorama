@@ -1,9 +1,9 @@
 import pytest
-from peptworkz.generate_SMILES import getMonomerEntry
+from peptorama.processing.generate_SMILES import getMonomerEntry
+from peptorama.processing.validate import MONOMER_DICT
 import json
 from pathlib import Path
 
-MONOMER_DICT = json.loads(Path("static/data/monomers.json").read_text())
 MONOMER_DICT = {**{k: {**v, "known": "Inbuilt"} for k, v in MONOMER_DICT.items()}}
 
 
@@ -36,6 +36,7 @@ class TestProteinogenic:
         assert result["name"] == "Valine"
         assert result["category"] == "Proteinogenic"
         assert result["smiles"] == "[*:1]NC(C(C)C)C(=O)[*:2]"
+
 
 class TestMonomerOveride:
     """Pro has L-Pro and D-Pro as manual entries"""
@@ -232,7 +233,6 @@ class TestUnknownMonomers:
         assert result["name"] is None
         assert result["category"] is None
         assert result["smiles"] == "[*:1]NC([*:4])C(=O)[*:2]"
-
 
     def test_l_X1165546643(self):
         result = getMonomerEntry("L-XX-X1165546643", MONOMER_DICT)

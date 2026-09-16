@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "peptorama"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "rdkit",
+]
+
+[tool.setuptools.package-data]
+peptorama = ["static/**/*"]
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov"]

@@ -1,11 +1,11 @@
 import pytest
-from peptworkz.generate_SMILES import generate_smiles
+from peptorama.processing.generate_SMILES import generate_smiles
+from peptorama.processing.validate import MONOMER_DICT
 from dataclasses import dataclass
 import json
 from pathlib import Path
 from rdkit import Chem
 
-MONOMER_DICT = json.loads(Path("static/data/monomers.json").read_text())
 MONOMER_DICT = {**{k: {**v, "known": "Inbuilt"} for k, v in MONOMER_DICT.items()}}
 
 
@@ -80,5 +80,6 @@ class TestDummyProteins:
             "Ala-Banana-Ala", ["Ala", "Banana", "Ala"]
         )
         result = generate_smiles(banana_peptide, user_monomers)
-        assert result == Chem.MolToSmiles(Chem.MolFromSmiles("NC(C)C(=O)NC(*)C(=O)NC(C)C(=O)O"))
-
+        assert result == Chem.MolToSmiles(
+            Chem.MolFromSmiles("NC(C)C(=O)NC(*)C(=O)NC(C)C(=O)O")
+        )

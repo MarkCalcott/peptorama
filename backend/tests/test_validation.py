@@ -1,6 +1,6 @@
 import pytest
-from peptworkz.validate import process_input, Peptide
-from peptworkz.info_codes import InfoCode
+from peptorama.processing.validate import process_input, Peptide
+from peptorama.processing.info_codes import InfoCode
 
 # ---------------------------------------------------------------------------
 # Examples of acceptable input
@@ -251,7 +251,7 @@ class TestPeptideDataclass:
     """Direct tests on the Peptide dataclass."""
 
     def test_peptide_to_dict_has_required_keys(self):
-        from peptworkz.info_codes import InfoCollector
+        from peptorama.processing.info_codes import InfoCollector
 
         p = Peptide(
             _id=1,
@@ -267,13 +267,13 @@ class TestPeptideDataclass:
         assert "monomers" in d
 
     def test_peptide_name_defaults_to_id(self):
-        from peptworkz.info_codes import InfoCollector
+        from peptorama.processing.info_codes import InfoCollector
 
         p = Peptide(_id=42, peptide="Ala-Thr-Ser", _warnings=InfoCollector())
         assert p.name == "Row 42"
 
     def test_peptide_monomer_extraction(self):
-        from peptworkz.info_codes import InfoCollector
+        from peptorama.processing.info_codes import InfoCollector
 
         p = Peptide(
             _id=1,
@@ -283,7 +283,7 @@ class TestPeptideDataclass:
         assert len(p._monomers) == 5
 
     def test_peptide_metadata_in_dict(self):
-        from peptworkz.info_codes import InfoCollector
+        from peptorama.processing.info_codes import InfoCollector
 
         p = Peptide(
             _id=1,
@@ -296,7 +296,7 @@ class TestPeptideDataclass:
         assert d["metadata"]["banana"] == False
 
     def test_empty_peptide_is_invalid(self):
-        from peptworkz.info_codes import InfoCollector
+        from peptorama.processing.info_codes import InfoCollector
 
         p = Peptide(_id=1, peptide="", _warnings=InfoCollector())
         assert p.valid is False
@@ -396,6 +396,7 @@ class TestInbuiltMonomerWarnings:
             == 2
         )
 
+
 # ---------------------------------------------------------------------------
 # SMILES-only input examples
 # ---------------------------------------------------------------------------
@@ -423,6 +424,7 @@ smiles, peptide, name
 CC(N)C(=O)NC(C(=O)NC(CO)C(=O)O)C(C)O, Ala-Thr-Ser, pep1
 CC(N)C(=O)NC(C(C)C)C(=O)O, D-Ala-Val, pep2
 """
+
 
 class TestSmilesOnlyParsing:
     """SMILES as the primary (first) column, no peptide column."""
@@ -461,6 +463,7 @@ class TestSmilesOnlyParsing:
         assert "Row 1" in names
         assert "Row 2" in names
 
+
 class TestSmilesOnlyWithMetadata:
     """SMILES-first input with name and additional columns."""
 
@@ -481,6 +484,7 @@ class TestSmilesOnlyWithMetadata:
         result = process_input(SMILES_ONLY_MULTI_COLUMN)
         first = result["peptides"][0]["metadata"]
         assert first.get("bioactivity") == "antibacterial"
+
 
 class TestSmilesPlusPeptide:
     """Both SMILES and peptide columns present, SMILES as primary."""
@@ -506,6 +510,7 @@ class TestSmilesPlusPeptide:
     def test_peptide_not_in_known_order(self):
         result = process_input(SMILES_AND_PEPTIDE_INPUT)
         assert "peptide" not in result["metadata"]["known_order"]
+
 
 class TestSmilesOnlyValidation:
     """Edge cases and validation for SMILES-only mode."""

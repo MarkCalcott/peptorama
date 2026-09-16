@@ -1,0 +1,10 @@
+{
+  "maxInputKB": 50,
+  "maxPeptides": 120,
+  "maxMetadata": 10,
+  "allowedExtensions": ["csv", "txt"],
+  "knownAlignMin": 0.3,
+  "knownTanimotoMin": 0.3,
+  "predictedAlignMin": 0.3,
+  "predictedTanimotoMin": 0.3
+}

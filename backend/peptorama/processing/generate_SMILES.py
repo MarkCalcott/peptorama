@@ -2,6 +2,7 @@ import re
 from .info_codes import InfoCode
 from rdkit import Chem
 
+
 def _parse_methylation(monomer):
     atoms = []
     remainder = monomer
@@ -11,15 +12,14 @@ def _parse_methylation(monomer):
     return atoms, remainder
 
 
-def getMonomerEntry(
-    raw_monomer: str, monomers: dict) -> dict:
+def getMonomerEntry(raw_monomer: str, monomers: dict) -> dict:
     """Takes in a raw amino acid, finds the base, adds basic decoration and stereochemistry for the alpha carbon"""
 
     # Return if in dictionary
-    if raw_monomer in monomers:           
+    if raw_monomer in monomers:
         entry = monomers[raw_monomer]
         return entry
-    
+
     # Check the stereochemistry
     if raw_monomer.upper().startswith("L-"):
         stereochemistry = "L"
@@ -100,9 +100,8 @@ def getMonomerEntry(
     if len(smiles) == 0 or not Chem.MolFromSmiles(smiles):
         smiles = "[*:1]NC([*:4])C(=O)[*:2]"  # Blank amino acid with label for unknown
 
-
     # Creating entry
-    
+
     entry = {
         "exact": flat_monomer,
         "base": base,
@@ -112,22 +111,22 @@ def getMonomerEntry(
         "smiles": smiles,
         "category": category,
     }
-      
 
     return entry
 
+
 def internal_multiple_cyclisation(mol_1, mol_2, label=9):
     """
-    For internal cyclisation of multiple peptides. 
+    For internal cyclisation of multiple peptides.
 
-    Takes two SMILES strings and attaches the terminus of the first to the to an 
+    Takes two SMILES strings and attaches the terminus of the first to the to an
     internal residue of the second.
     """
     mol_1 = re.sub(r"\[\*:[2]\]", "[*:9]", mol_1)
     mol_2 = re.sub(r"\[\*:[34]\]", "[*:9]", mol_2)
     combined_smiles = mol_1 + "." + mol_2
     combined_smiles = combined_smiles.replace("[*:1]", "")
-    
+
     mol = Chem.MolFromSmiles(combined_smiles)
     if mol is None:
         raise ValueError(f"Could not parse SMILES:\n  {combined_smiles}")
@@ -165,9 +164,7 @@ def internal_multiple_cyclisation(mol_1, mol_2, label=9):
     return Chem.MolToSmiles(rw)
 
 
-def generate_smiles(
-    peptide: object, monomers: dict
-) -> str:
+def generate_smiles(peptide: object, monomers: dict) -> str:
 
     peptide_str = peptide.peptide
 
@@ -196,7 +193,8 @@ def generate_smiles(
 
         # Terminus to the amine group
         intramolecular = pos > 0 and "(" in peptide_str[0:pos]
-        if intramolecular: intramolecular_n = peptide_str[0:pos].count("(")
+        if intramolecular:
+            intramolecular_n = peptide_str[0:pos].count("(")
 
         # Remove the first monomer
         end = pos + len(monomer)
@@ -239,18 +237,17 @@ def generate_smiles(
                 smiles_peptide = re.sub(r"\[\*:[234]\]", "9", smiles_peptide)
                 smiles_peptide = smiles_peptide.replace("[*:1]", "")
                 break
-            smiles_peptide = internal_multiple_cyclisation(smiles_peptide, subunit) 
+            smiles_peptide = internal_multiple_cyclisation(smiles_peptide, subunit)
             intramolecular_n -= 1
 
-        
     else:
         smiles_peptide = smiles_peptide.replace("[*:1]", "")
         # This allows aldehydes if 2 is absent or other terminal groups
         smiles_peptide = smiles_peptide.replace("[*:2]", "O")
 
     # Replace placeholders with numbers
-    smiles_peptide = re.sub(r'\(\[\*:([5-8])\]\)', r'\1', smiles_peptide)
-    smiles_peptide = re.sub(r'\[\*:([5-8])\]', r'\1', smiles_peptide)
+    smiles_peptide = re.sub(r"\(\[\*:([5-8])\]\)", r"\1", smiles_peptide)
+    smiles_peptide = re.sub(r"\[\*:([5-8])\]", r"\1", smiles_peptide)
 
     # Check with RDKit
     mol = Chem.MolFromSmiles(smiles_peptide)

@@ -2,41 +2,45 @@ import re
 from dataclasses import dataclass, field, asdict
 from .info_codes import InfoCode, InfoCollector
 from .generate_SMILES import generate_smiles, getMonomerEntry
-from schemas import DISALLOWED_TEXT
+from peptorama.schemas import DISALLOWED_TEXT
+from importlib.resources import files
 
 # -- Policy limits --
 import json
 from pathlib import Path
 
-MONOMER_DICT = json.loads(Path("static/data/monomers.json").read_text())
-CONFIG = json.loads(Path("static/data/config.json").read_text())
+MONOMER_DICT = json.loads(
+    files("peptorama").joinpath("static/data/monomers.json").read_text()
+)
+CONFIG = json.loads(files("peptorama").joinpath("static/data/config.json").read_text())
 MAX_FILE_BYTES = CONFIG["maxInputKB"] * 1024
 ALLOWED_EXTENSIONS = CONFIG["allowedExtensions"]
 MAX_PEPTIDES = CONFIG["maxPeptides"]
 MAX_METADATA = CONFIG["maxMetadata"]
 
+
 def _process_source(input_text, origin, output, start_idx):
     """
     Parse one input source (known or predicted) into output, in place.
- 
+
     idx is threaded in via start_idx and returned so the caller can continue
     the count into the next source — peptides get globally-unique ids across
     both known and predicted rather than each source restarting at 1.
- 
+
     Returns the next free index.
     """
     if not input_text.strip():
         return start_idx, []
- 
+
     lines = [x.strip() for x in input_text.splitlines() if x.strip()]
- 
+
     # Header detection
     first_cells = [x.strip() for x in lines[0].split(",")]
     has_header = bool(
         re.match(r"^peptides?$", first_cells[0], re.IGNORECASE)
         or re.match(r"^smiles$", first_cells[0], re.IGNORECASE)
     )
- 
+
     if has_header:
         col_names = [x.strip() for x in first_cells]
         lines = lines[1:]
@@ -54,7 +58,7 @@ def _process_source(input_text, origin, output, start_idx):
     col_number = len(col_names)
     if col_number == 1:
         output["warnings"].add(InfoCode.SINGLE_COLUMN)
- 
+
     # Locate peptide / name / smiles columns
     peptide_col = name_col = smile_col = None
     for i, item in enumerate(col_names):
@@ -64,7 +68,7 @@ def _process_source(input_text, origin, output, start_idx):
             smile_col = i
         elif re.fullmatch(r"names?", item, re.IGNORECASE):
             name_col = i
- 
+
     # Check column names are unique
     seen = set()
     col_order = []
@@ -75,7 +79,7 @@ def _process_source(input_text, origin, output, start_idx):
             seen.add(cell)
             if not cell_id in (peptide_col, name_col, smile_col):
                 col_order.append((cell_id, cell))
- 
+
     # Process each peptide
     idx = start_idx
     for line in lines:
@@ -83,7 +87,7 @@ def _process_source(input_text, origin, output, start_idx):
         cells = [x.strip() for x in line.split(",")]
 
         peptide_str = cells[peptide_col] if peptide_col is not None else None
- 
+
         if len(cells) != len(col_names):
             output["warnings"].add(InfoCode.MISMATCH_NO_COLUMNS, row=idx)
             output["peptides"].append(
@@ -91,14 +95,12 @@ def _process_source(input_text, origin, output, start_idx):
             )
             idx += 1
             continue
- 
+
         name = cells[name_col] if name_col is not None else None
         smiles = (
-            cells[smile_col]
-            if smile_col is not None and cells[smile_col]
-            else None
+            cells[smile_col] if smile_col is not None and cells[smile_col] else None
         )
- 
+
         metadata = {}
         for cell_id, col in col_order:
             value = cells[cell_id]
@@ -113,15 +115,20 @@ def _process_source(input_text, origin, output, start_idx):
             output["warnings"].add(InfoCode.NO_PEPTIDE_OR_SMILES, row=idx)
             output["peptides"].append(
                 Peptide(
-                    _id=idx, peptide="", name=name, origin=origin,
-                    _warnings=output["warnings"], _metadata=metadata, valid=False,
+                    _id=idx,
+                    peptide="",
+                    name=name,
+                    origin=origin,
+                    _warnings=output["warnings"],
+                    _metadata=metadata,
+                    valid=False,
                 )
             )
             idx += 1
             continue
- 
+
         peptide = Peptide(
-            _id=idx+1,
+            _id=idx + 1,
             peptide=peptide_str,
             name=name,
             smiles=smiles,
@@ -130,18 +137,21 @@ def _process_source(input_text, origin, output, start_idx):
             _metadata=metadata,
         )
         output["peptides"].append(peptide)
- 
+
         if peptide.valid:
             for monomer in peptide._monomers:
                 if monomer not in output["monomers"]:
                     output["monomers"][monomer] = {"count": 0}
                 output["monomers"][monomer]["count"] += 1
- 
+
         idx += 1
 
     return idx, col_order
 
-def process_input(known: str, predicted: str = "", user_monomers: dict | None = None) -> dict:
+
+def process_input(
+    known: str, predicted: str = "", user_monomers: dict | None = None
+) -> dict:
     """
     This function takes the raw text input with one peptide per line. It processes
     it to return a dictionary
@@ -161,25 +171,27 @@ def process_input(known: str, predicted: str = "", user_monomers: dict | None = 
     }
 
     # Only process actual data
-    if not known.strip() and not predicted.strip() :
+    if not known.strip() and not predicted.strip():
         output["warnings"].add(InfoCode.NO_INPUT)
         return output
 
     # Extract data from each input type
     known_count, known_order = _process_source(known, "known", output, 0)
-    total_count, predicted_order = _process_source(predicted, "predicted", output, known_count)
+    total_count, predicted_order = _process_source(
+        predicted, "predicted", output, known_count
+    )
     predicted_count = total_count - known_count
 
     # Merge monomers
     if user_monomers:
         monomer_dict = {**MONOMER_DICT, **user_monomers}
-    else: 
+    else:
         monomer_dict = {**MONOMER_DICT}
 
     # Resolve monomers against dictionary
     DIVERGENCE_FIELDS = ("base", "exact", "name", "category", "smiles")
     for code, info in output["monomers"].items():
-        
+
         resolved = {"code": code, **info, **getMonomerEntry(code, monomer_dict)}
 
         if resolved.get("smiles") == "[*:1]NC([*:4])C(=O)[*:2]":
@@ -187,7 +199,9 @@ def process_input(known: str, predicted: str = "", user_monomers: dict | None = 
             output["warnings"].add(InfoCode.UNKNOWN_MONOMERS, monomer_code=code)
 
         # Checks the amino acids match if the base is known, i.e. L-Ser has the base of Ser
-        elif resolved.get("base") in MONOMER_DICT or resolved.get("code") in MONOMER_DICT:
+        elif (
+            resolved.get("base") in MONOMER_DICT or resolved.get("code") in MONOMER_DICT
+        ):
             expected = getMonomerEntry(code, MONOMER_DICT)
             if any(resolved.get(f) != expected.get(f) for f in DIVERGENCE_FIELDS):
                 resolved["known"] = "User-defined"
@@ -206,9 +220,7 @@ def process_input(known: str, predicted: str = "", user_monomers: dict | None = 
         if peptide.smiles == None and peptide.peptide and peptide.valid:
             peptide.smiles = generate_smiles(peptide, output["monomers"])
             if peptide.smiles == None:
-                output["warnings"].add(
-                        InfoCode.SMILES_NOT_GENERATED, name=peptide.name
-                    )
+                output["warnings"].add(InfoCode.SMILES_NOT_GENERATED, name=peptide.name)
 
     # Finalise metadata
     output["peptides"] = [p.to_dict() for p in output["peptides"]]
@@ -250,7 +262,8 @@ class Peptide:
             basic_peptide = re.sub(r"[()/]+", "-", self.peptide).strip("-")
             basic_peptide = re.sub(r"-{2,}", "-", basic_peptide)
             self._monomers = [
-                x.strip() for x in re.findall(self.MONOMER_REGEX, basic_peptide.strip("[]"))
+                x.strip()
+                for x in re.findall(self.MONOMER_REGEX, basic_peptide.strip("[]"))
             ]
             self.validate()
         else:
@@ -304,4 +317,3 @@ class Peptide:
             "metadata": dict(self._metadata),
         }
         return out
-

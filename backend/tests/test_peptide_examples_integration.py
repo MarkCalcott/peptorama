@@ -1,7 +1,7 @@
 import pytest
-from peptworkz.validate import process_input
+from peptorama.processing.validate import process_input
 from rdkit import Chem
- 
+
 user_monomers = {
     "Bmt": {
         "exact": "Bmt",
@@ -186,14 +186,13 @@ pubchem = {
     14969: "C[C@H]1[C@H]([C@@](C[C@@H](O1)O[C@@H]2[C@H]([C@@H]([C@H](O[C@H]2OC3=C4C=C5C=C3OC6=C(C=C(C=C6)[C@H]([C@H](C(=O)N[C@H](C(=O)N[C@H]5C(=O)N[C@@H]7C8=CC(=C(C=C8)O)C9=C(C=C(C=C9O)O)[C@H](NC(=O)[C@H]([C@@H](C1=CC(=C(O4)C=C1)Cl)O)NC7=O)C(=O)O)CC(=O)N)NC(=O)[C@@H](CC(C)C)NC)O)Cl)CO)O)O)(C)N)O",
     9812534: "CC[C@H](C)[C@@H]1[C@H](CC(=O)O[C@H](C(=O)[C@@H](C(=O)N[C@H](C(=O)N2CCC[C@H]2C(=O)N([C@H](C(=O)O[C@@H]([C@@H](C(=O)N1)NC(=O)[C@@H](CC(C)C)N(C)C(=O)[C@@H]3CCCN3C(=O)C(=O)C)C)CC4=CC=C(C=C4)OC)C)CC(C)C)C)C(C)C)O",
     9855014: "CN1[C@H]2CSSC[C@@H](C(=O)N([C@H](C(=O)SC[C@H](C(=O)NCC1=O)NC(=O)C3=NC4=CC=CC=C4C=C3O)CSC)C)N(C(=O)CNC(=O)[C@@H](CSC(=O)[C@@H](N(C2=O)C)CSC)NC(=O)C5=NC6=CC=CC=C6C=C5O)C",
-    34231: "C1[C@@H](C(=O)OC[C@@H](C(=O)OC[C@@H](C(=O)O1)NC(=O)C2=C(C(=CC=C2)O)O)NC(=O)C3=C(C(=CC=C3)O)O)NC(=O)C4=C(C(=CC=C4)O)O"
+    34231: "C1[C@@H](C(=O)OC[C@@H](C(=O)OC[C@@H](C(=O)O1)NC(=O)C2=C(C(=CC=C2)O)O)NC(=O)C3=C(C(=CC=C3)O)O)NC(=O)C4=C(C(=CC=C4)O)O",
 }
-
 
 
 def test_multiple_peptide_input():
     result = process_input(
-    """peptide, name, PubChemCID, features
+        """peptide, name, PubChemCID, features
     [D-Phe-L-Pro-L-Phe-D-Phe-L-Asn-L-Gln-L-Tyr-L-Val-L-Orn-L-Leu], Tyrocidine, 16129635, Standard
     [[D-Phe-L-Pro-L-Val-L-Orn-L-Leu]], Gramicidin S, 73357, Standard
     n-Dec-L-Trp-D-Asn-L-Asp-(L-Thr-Gly-L-Orn-L-Asp-D-Ala-L-Asp-Gly-D-Ser-L-3-Me-Glu-L-Kyn), Daptomycin, 21585658, Standard|Defined residues
@@ -205,10 +204,10 @@ def test_multiple_peptide_input():
     Pyr-L-Pro-D-N-Me-Leu-(L-Thr-isoSta-Hip-L-Leu-L-Pro-L-N-Me-O-Me-Tyr), Plitidepsin, 9812534, isostatine|hydroxy acid|O-Me
     DHB-(((L-Ser))), enterobactin, 34231, trimeric intramolecular
     """,
-    """""",
-    user_monomers,
+        """""",
+        user_monomers,
     )
     for peptide in result["peptides"]:
         mol1 = Chem.MolFromSmiles(peptide["smiles"])
         mol2 = Chem.MolFromSmiles(pubchem[int(peptide["metadata"]["PubChemCID"])])
-        assert (Chem.MolToSmiles(mol1) == Chem.MolToSmiles(mol2))
+        assert Chem.MolToSmiles(mol1) == Chem.MolToSmiles(mol2)
