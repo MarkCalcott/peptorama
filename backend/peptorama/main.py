@@ -1,15 +1,19 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
-from .processing.validate import process_input, CONFIG
-from .processing.network import build_network
+from peptorama.processing.validate import process_input, CONFIG
+from peptorama.processing.network import build_network
 
-from .schemas import PeptideInput, SubmitRequest
-from .serialise import serialise
+from peptorama.schemas import PeptideInput, SubmitRequest
+from peptorama.serialise import serialise
 from pathlib import Path
+from starlette.exceptions import HTTPException
 
 import re
 import os
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+FRONTEND_DIST = PROJECT_ROOT / "frontend" / "dist"
 
 app = FastAPI()
 
@@ -51,6 +55,21 @@ def submit_job(request: SubmitRequest):
 def network_page():
     return FileResponse("static/network.html")
 
+
+class SPAStaticFiles(StaticFiles):
+    """Serve the React build, falling back to index.html for client-side routes."""
+
+    async def get_response(self, path, scope):
+        try:
+            return await super().get_response(path, scope)
+        except HTTPException as exc:
+            if exc.status_code == 404 and not path.startswith("api"):
+                return await super().get_response("index.html", scope)
+            raise
+
+
+if FRONTEND_DIST.is_dir():
+    app.mount("/", SPAStaticFiles(directory=FRONTEND_DIST, html=True), name="frontend")
 
 if __name__ == "__main__":
     import uvicorn
