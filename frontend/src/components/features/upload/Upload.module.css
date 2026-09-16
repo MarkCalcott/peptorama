@@ -1,0 +1,45 @@
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: var(--space-md)
+}
+.buttonGroup {
+    background-color: var(--bg-input);
+    display: flex;
+    align-items: center;
+    border: solid 1px var(--border-dim);
+    border-radius: var(--radius-lg);
+    padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-md);
+}
+.buttonGroup h4 {
+    padding-right: var(--space-md);
+}
+.exampleButtons {
+    display: flex;
+    gap: var(--space-xs);
+}
+
+.left {
+  flex: 1;
+  min-width: 450px;
+}
+
+.right {
+  flex: 1 1 30%;
+  min-width: 350px;
+  max-width: 650px;
+}
+
+.container {
+  container-type: inline-size;
+}
+
+@container (max-width: 900px) {
+  .right {
+    max-width: 100% !important;
+    flex-basis: 100% !important;
+  }
+}

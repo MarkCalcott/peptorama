@@ -1,0 +1,14 @@
+
+.toolbar {
+        position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: var(--space-md);
+    background: var(--bg-bar);
+    border-bottom: solid 1px var(--border-dim);
+    gap: calc(var(--space-lg)*2);
+}
+

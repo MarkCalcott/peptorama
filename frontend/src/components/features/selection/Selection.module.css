@@ -1,0 +1,29 @@
+.moleculeThumb {
+    max-width: 200px;
+    border-radius: var(--radius-md);
+    cursor: zoom-in;
+}
+.moleculeLarge {
+    margin: auto 20px;
+    border-radius: var(--radius-lg);
+}
+.peptideRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.flexCol {
+    display: flex;
+    flex-direction: column;
+}
+.connectedNodes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-md)
+}
+.truncated {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

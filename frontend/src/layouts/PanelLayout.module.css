@@ -1,0 +1,32 @@
+.layout {
+  display: grid;
+  gap: var(--space-sm);
+  height: 80%;
+  margin: var(--space-md);
+}
+
+.sidepanel {
+  min-width: 0;
+}
+
+.centre {
+  overflow: hidden;
+  min-width: 0;
+}
+
+.handle {
+  cursor: col-resize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.handle {
+  background: var(--border-dim);
+  transition: background var(--transition-speed);
+}
+
+.handle:hover {
+  background: var(--border-hover);
+}
+

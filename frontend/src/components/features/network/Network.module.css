@@ -1,0 +1,39 @@
+.networkContainer {
+    height: calc(100% - var(--space-xs));
+    min-height: 50vh;
+    background: var(--bg-input);
+    border-radius: var(--radius-lg);
+}
+.preload {
+    padding: var(--space-lg);
+    text-align: center;
+}
+.network {
+    height: 100%;
+    width: 100%;
+    min-height: 50vh;
+}
+.toolbar {
+    padding: 0 var(--space-sm);
+    display: flex;
+    gap: var(--space-md);
+    background-color: none;
+}
+.zoom {
+    cursor: zoom-in;
+}
+
+.knownSwatch {
+  width: 21px;
+  height: 21px;
+  border-radius: var(--radius-lg);
+  background: var(--cyan);
+  margin-right: var(--space-xs);
+}
+.predictedSwatch {
+  width: 21px;
+  height: 21px;
+  border-radius: var(--radius-sm);
+  background: var(--green);
+  margin-right: var(--space-xs);
+}

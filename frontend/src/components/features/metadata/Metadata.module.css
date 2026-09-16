@@ -1,0 +1,15 @@
+.gridWrapper {
+  container-type: inline-size;
+}
+
+.graphContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: var(--space-md);
+}
+
+@container (max-width: 900px) {
+  .graphContainer {
+    grid-template-columns: 1fr;
+  }
+}

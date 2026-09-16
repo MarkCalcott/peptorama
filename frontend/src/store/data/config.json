@@ -1,0 +1,8 @@
+{
+  "maxInputKB": 250,
+  "maxPeptides": 100,
+  "maxMetadata": 40,
+  "maxPredictedPeptides": 200,
+  "maxPredictedKB": 200,
+  "maxPredictedColumns": 40
+}
