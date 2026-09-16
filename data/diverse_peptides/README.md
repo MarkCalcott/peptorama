@@ -13,4 +13,4 @@ To use this data, input the files into the known and monomers section of the upl
 
 ## Peptide and monomer notation
 
-See paper for peptide nomenclature.
+See paper for peptide and monomer nomenclature.
