@@ -114,64 +114,6 @@ export const EDGE_SCHEMA = [
   },
 ];
 
-export const PREDICTED_FILTERING_SCHEMA = [
-  {
-    legend: "Enable filtering",
-    fields: [
-      {
-        kind: "toggle",
-        path: "filtering.filter",
-        options: [
-          {
-            value: true,
-            label: "Use filtering",
-            tip: "Only keep peptides with a minimum similarity",
-          },
-          {
-            value: false,
-            label: "No filtering",
-            tip: "Keep all predicted peptides",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    legend: "Monomer alignment",
-    show: (s) => {
-      return s.edge.methods.includes("monomer") && s.filtering.filter;
-    },
-    fields: [
-      {
-        kind: "slider",
-        path: "filtering.monomer.cutoff",
-        label: "Minimum monomer sequence identity to keep",
-        unit: "%",
-        min: 30,
-        max: 100,
-        step: 1,
-      },
-    ],
-  },
-  {
-    legend: "Tanimoto similarity",
-    show: (s) => {
-      return s.edge.methods.includes("tanimoto") && s.filtering.filter;
-    },
-    fields: [
-      {
-        kind: "slider",
-        path: "filtering.tanimoto.cutoff",
-        label: "Minimum Tanimoto similarity to to keep",
-        unit: "",
-        min: 0.3,
-        max: 1,
-        step: 0.01,
-      },
-    ],
-  },
-];
-
 export const PREDICTED_PROCESSING_SCHEMA = [
   {
     legend: "Peptide length",

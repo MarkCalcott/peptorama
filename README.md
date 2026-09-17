@@ -2,47 +2,60 @@ Temp file
 
 ## Installation
 
-The simplest installation uses node.js, npm and conda
+### Requirements
 
-```
-git clone https://github.com/<your-username>/peptorama.git
+- [Git](https://git-scm.com/)
+- [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or Anaconda
+- [Node.js](https://nodejs.org/) (LTS)
+
+### Install
+
+```bash
+git clone https://github.com/MarkCalcott/peptorama.git
 cd peptorama
-
-:: Backend
 conda env create -f backend/environment.yaml
-conda activate peptorama
-cd backend
-pytest
+```
 
-:: Frontend
-cd ..\frontend
+Build the frontend:
+
+```bash
+cd frontend
 npm ci
 npm run build
 ```
 
 ## Run the app
 
-Once installed, first run the below commands to start a local server and use peptorama and then view the app at: http://localhost:8000/
+From the `backend` folder:
 
-```
-cd ..\backend
+```bash
 conda activate peptorama
 uvicorn peptorama.main:app
 ```
 
+Then open http://localhost:8000 in your browser.
+
 ## Run in development mode
 
-To develop the app, run the app in two terminals as below.
+Run the app in two terminals as below.
+
+### Run the tests
+
+```bash
+cd backend
+pytest
+pytest --cov=peptorama
+```
 
 ### Terminal 1
-```
-conda activate peptorama
+```bash
 cd backend
+conda activate peptorama
 uvicorn peptorama.main:app --reload
 ```
 
 ### Terminal 2
-```
+```bash
 cd frontend
 npm run dev
 ```

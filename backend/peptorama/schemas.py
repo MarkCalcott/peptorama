@@ -4,7 +4,8 @@ from typing import Literal
 from pydantic import BaseModel, Field, field_validator, model_validator
 
 DISALLOWED_TEXT = r'[#$%&@!?{}\\|~`"\'<>^,]'
-DISALLOWED_SMILES = r'[^A-Za-z0-9#=\-\(\)\[\]\.@\/\\%\*+~:]'
+DISALLOWED_SMILES = r"[^A-Za-z0-9#=\-\(\)\[\]\.@\/\\%\*+~:]"
+
 
 class MonomerEntry(BaseModel):
     code: str
@@ -40,6 +41,7 @@ class MonomerEntry(BaseModel):
             raise ValueError("Base field cannot contain dashes")
         return v
 
+
 class PeptideInput(BaseModel):
     known: str = Field("", max_length=1_000_000)
     predicted: str = Field("", max_length=1_000_000)
@@ -50,13 +52,14 @@ class PeptideInput(BaseModel):
         if not self.known.strip() and not self.predicted.strip():
             raise ValueError("Provide known peptides, predicted peptides, or both.")
         return self
- 
+
     @field_validator("monomers")
     @classmethod
     def validate_dict_size(cls, v):
         if v and len(v) > 1000:
             raise ValueError("Monomer dictionary too large (max 1000 entries)")
         return v
+
 
 # Settings for edges
 class MonomerConfig(BaseModel):
@@ -66,31 +69,22 @@ class MonomerConfig(BaseModel):
     )
     cutoff: float = Field(..., ge=0.0, le=100.0)
 
+
 class TanimotoConfig(BaseModel):
     radius: list[int] = Field(..., min_length=1)
     cutoff: float = Field(..., ge=0.0, le=1.0)
+
 
 class EdgeConfig(BaseModel):
     methods: list[Literal["monomer", "tanimoto"]] = Field(..., min_length=1)
     monomer: MonomerConfig
     tanimoto: TanimotoConfig
 
-# Settings for filtering 
-class FilterMonomerConfig(BaseModel):
-    cutoff: float = Field(..., ge=0.0, le=100.0)
- 
-class FilterTanimotoConfig(BaseModel):
-    cutoff: float = Field(..., ge=0.0, le=1.0)
- 
-class FilteringConfig(BaseModel): 
-    filter: bool
-    monomer: FilterMonomerConfig
-    tanimoto: FilterTanimotoConfig
 
 # Submit
 class SubmitConfig(BaseModel):
     edge: EdgeConfig
-    filtering: FilteringConfig
+
 
 class SubmitRequest(BaseModel):
     input: PeptideInput

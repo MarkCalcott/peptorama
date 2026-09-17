@@ -75,12 +75,7 @@ const makeSettings = () => ({
   processing: {
     length: { min: 3, max: 40 },
     split: "split",
-  },
-  filtering: {
-    filter: true,
-    monomer: { cutoff: 40 },
-    tanimoto: { cutoff: 0.45 },
-  },
+  }
 });
 
 const makeData = () => ({

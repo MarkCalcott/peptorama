@@ -4,7 +4,6 @@ import Button from "@/components/ui/Button";
 
 import {
   EDGE_SCHEMA,
-  PREDICTED_FILTERING_SCHEMA,
   PREDICTED_PROCESSING_SCHEMA,
 } from "./settingsSchema";
 
@@ -220,30 +219,6 @@ export default function Known() {
             parameters on a subset.
           </p>
           <SchemaSection schema={EDGE_SCHEMA} settings={settings} />
-        </div>
-
-        <div className="box section">
-          <h4>Predicted filtering</h4>
-          <p>
-            Settings to filter predicted peptides based on a minimum similarity
-            to at least one known peptide. Allows larger numbers of predicted
-            peptides to be processed without creating a network resembling a
-            birds' nest.
-          </p>
-
-          <SchemaSection
-            schema={PREDICTED_FILTERING_SCHEMA}
-            settings={settings}
-          />
-          <p className="info">
-            Filtering uses the broadest edge creation methods, i.e. the
-            left-most selected options for monomer alignment and/or Tanimoto
-            similarity.
-          </p>
-          <p className="info">
-            Filtering solely determines what data is kept. Edge creation remains
-            dependent on edge methods.
-          </p>
         </div>
 
         <div className="box section">
