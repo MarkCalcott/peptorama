@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
-from peptorama.processing.validate import process_input, CONFIG
+from peptorama.processing.validate import process_input
 from peptorama.processing.network import build_network
 
 from peptorama.schemas import PeptideInput, SubmitRequest
@@ -22,9 +22,6 @@ app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 
 # -- Routes --
-@app.get("/api/config")
-def get_config():
-    return CONFIG
 
 
 @app.get("/health")

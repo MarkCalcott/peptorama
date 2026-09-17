@@ -7,16 +7,10 @@ from importlib.resources import files
 
 # -- Policy limits --
 import json
-from pathlib import Path
 
 MONOMER_DICT = json.loads(
     files("peptorama").joinpath("static/data/monomers.json").read_text()
 )
-CONFIG = json.loads(files("peptorama").joinpath("static/data/config.json").read_text())
-MAX_FILE_BYTES = CONFIG["maxInputKB"] * 1024
-ALLOWED_EXTENSIONS = CONFIG["allowedExtensions"]
-MAX_PEPTIDES = CONFIG["maxPeptides"]
-MAX_METADATA = CONFIG["maxMetadata"]
 
 
 def _process_source(input_text, origin, output, start_idx):

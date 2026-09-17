@@ -10,19 +10,19 @@ const checkErrors = (text, config) => {
   // Limits for online jobs
   if (new Blob([text]).size > config.maxInputKB * 1024) {
     errors.push(
-      `Input exceeds ${config.maxInputKB} KB limit for known peptides (Reduce input or install locally to modify)`,
+      `Input exceeds ${config.maxInputKB} KB limit for known peptides (Run locally at your discretion)`,
     );
   }
   const lines = text.trim().split("\n").filter(Boolean);
   if (lines.length > config.maxPeptides) {
     errors.push(
-      `Too many peptides (max ${config.maxPeptides}). (Reduce input or install locally to modify)`,
+      `Too many peptides (max ${config.maxPeptides}). (Run locally at your discretion)`,
     );
   }
   const columns = lines.length ? lines[0].split(",").length : 0;
   if (columns > config.maxMetadata) {
     errors.push(
-      `Too many metadata columns (max ${config.maxMetadata}). (Reduce input or install locally to modify)`,
+      `Too many metadata columns (max ${config.maxMetadata}). (Run locally at your discretion)`,
     );
   }
   return errors;
