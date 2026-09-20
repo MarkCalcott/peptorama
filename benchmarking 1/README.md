@@ -11,7 +11,7 @@ benchmarking 1/
   raw/            annotated genomes
     step1_assemble_annotate.sh
     known/          EMPTY - see Gaps
-    predicted/      30 genomes from Mark, Bakta-annotated
+    predicted/      30 genomes, Bakta-annotated
   antiSMASH/      antiSMASH output
     step2_run_antismash.sh
     known/          52 genomes, 762 region GenBanks (regions only)
@@ -46,7 +46,7 @@ Everything here is a copy. The original `Benchmarking/` folder is untouched.
 here from ENA reads (study `PRJEB76792`) and 35 downloaded from NCBI. These are
 the ground truth the benchmark measures against.
 
-**predicted** — the 30 isolate genomes from Mark. Unpublished, no accessions,
+**predicted** — the 30 isolate genomes. Unpublished, no accessions,
 Bakta-annotated when received. Their pyoverdines are predicted from sequence,
 which is what the benchmark is testing.
 
