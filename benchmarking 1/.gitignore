@@ -1,0 +1,85 @@
+# =============================================================================
+# benchmarking 1 - what belongs in version control
+# =============================================================================
+#
+# This tree is ~1.2 GB and almost all of it is regenerable tool output: 1,186
+# antiSMASH regions, 83 staged BGC records, three BiG-SCAPE distance databases
+# and a DiscERN run. None of that belongs in git. GitHub warns over 50 MB per
+# file and rejects at 100 MB, and antiSMASH's per-genome JSON is ~11 MB each.
+#
+# So this file works by DENY-BY-DEFAULT: everything is ignored, and the code,
+# documentation and small provenance tables are added back by name. A new data
+# directory dropped into the tree is therefore ignored automatically, rather
+# than silently committed because nobody updated a pattern.
+#
+# What ends up tracked is the handful of files needed to rerun the analyses,
+# plus the tables that justify what was included and excluded. The data itself
+# should go to a repository built for it (Zenodo, ENA/NCBI) and be cited from
+# README.md by DOI or accession.
+#
+# To include the results after all, delete the "results" block near the end.
+# To include the inputs too, delete the bulk-data lines - but read the size
+# note above first, and expect to need Git LFS.
+
+# --- deny everything at the top level, then re-admit ------------------------
+/*
+!/.gitignore
+!/README.md
+!/VERSIONS.txt
+
+# --- step 1: raw genomes ----------------------------------------------------
+!/raw/
+/raw/*
+!/raw/*.sh
+
+# --- step 2: antiSMASH ------------------------------------------------------
+!/antiSMASH/
+/antiSMASH/*
+!/antiSMASH/*.sh
+
+# --- step 3: benchmark inputs and the run scripts ---------------------------
+!/benchmark/
+/benchmark/*
+!/benchmark/*.py
+!/benchmark/*.sh
+!/benchmark/*.tsv
+
+# the staged BGC records are regenerable from step 3; keep only the two
+# tables that document why six genomes were held out of the analyses
+!/benchmark/bigscape/
+/benchmark/bigscape/*
+!/benchmark/bigscape/excluded/
+/benchmark/bigscape/excluded/*
+!/benchmark/bigscape/excluded/*.md
+!/benchmark/bigscape/excluded/*.tsv
+
+# DiscERN: the patch is REQUIRED to rerun and is a few lines of diff, so it is
+# tracked even though it sits inside a results directory
+!/benchmark/discern/
+/benchmark/discern/*
+!/benchmark/discern/DISCERN_KNOWN_REFS_RESULTS/
+/benchmark/discern/DISCERN_KNOWN_REFS_RESULTS/*
+!/benchmark/discern/DISCERN_KNOWN_REFS_RESULTS/discern_k2_g30_new/
+/benchmark/discern/DISCERN_KNOWN_REFS_RESULTS/discern_k2_g30_new/*
+!/benchmark/discern/DISCERN_KNOWN_REFS_RESULTS/discern_k2_g30_new/*.diff
+!/benchmark/discern/DISCERN_KNOWN_REFS_RESULTS/discern_k2_g30_new/*.md
+!/benchmark/discern/DISCERN_KNOWN_REFS_RESULTS/discern_k2_g30_new/*.sh
+
+# --- results: excluded for now ----------------------------------------------
+# bigscape/results/ holds three SQLite distance databases and the BiG-SCAPE web
+# UI. The .db files are the valuable part - they carry every pairwise distance,
+# so a reader can re-cut at a different cutoff without rerunning - but they are
+# large and regenerable. Deposit them rather than commit them.
+/benchmark/bigscape/results/
+
+# --- editor, OS and Python noise --------------------------------------------
+__pycache__/
+*.py[cod]
+.DS_Store
+desktop.ini
+Thumbs.db
+.vscode/
+.idea/
+*~
+*.tmp
+*.bak

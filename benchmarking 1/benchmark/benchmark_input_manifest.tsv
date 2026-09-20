@@ -1,0 +1,84 @@
+arm	directory	label	staged	reason	n_loci	bp	n_cds	regions	file
+known	AE004091_P_aeruginosa_PAO1_ATCC_15692_	AE004091	yes		1	82604	39	AE004091__AE004091.2.region008.gbk	AE004091.region001.gbk
+known	AP013070_Pseudomonas_putida_589_DSM_50202_or_ATCC_12633_	AP013070	yes		2	77858	29	AP013070__AP013070.1.region003.gbk;AP013070__AP013070.1.region004.gbk	AP013070.region001.gbk
+known	AP039450_Pseudomonas_sp._LBSA1	AP039450	excluded	excluded reference	1	48881	12	AP039450__AP039450.1.region004.gbk	AP039450.region001.gbk
+known	CP000058_Pseudomonas_syringae_pv._syringae_ATCC_19310_Pseudo	CP000058	yes		1	62775	24	CP000058__CP000058.1.region006.gbk	CP000058.region001.gbk
+known	CP000076_Pseudomonas_protegens_Pf-5_Pseudomonas_fluorescens_	CP000076	yes		1	51992	19	CP000076__CP000076.1.region012.gbk	CP000076.region001.gbk
+known	CP000094_Pseudomonas_fluorescens_Pf0-1	CP000094	yes		1	55765	16	CP000094__CP000094.2.region004.gbk	CP000094.region001.gbk
+known	CP001157_Azotobacter_vinelandii_strain_D_Azotobacter_vinelan	CP001157	yes		1	72472	23	CP001157__CP001157.1.region005.gbk	CP001157.region001.gbk
+known	CP003961_Pseudomonas_sp._taiwanensis_VLB120	CP003961	yes		1	61821	19	CP003961__CP003961.1.region008.gbk	CP003961.region001.gbk
+known	CP011835_Azomonas_macrocytogenes_ATCC_12334	CP011835	yes	no pyoverdine locus; most relevant NRPS: NRP-metallophore.NRPS	1	61053	46	CP011835__CP011835.1.region010.gbk	CP011835.region001.gbk
+known	CP016212_Pseudomonas_putida_G4R	CP016212	yes		1	65694	25	CP016212__CP016212.1.region004.gbk	CP016212.region001.gbk
+known	CP023269_Pseudomonas_putida_9AW_Pseudomonas_putida_9BW	CP023269	excluded	excluded reference	1	36712	9	CP023269__CP023269.1.region005.gbk	CP023269.region001.gbk
+known	CP028517_Pseudomonas_fluorescens_PL7	CP028517	excluded	excluded reference	1	36746	10	CP028517__CP028517.1.region008.gbk	CP028517.region001.gbk
+known	CP034337_Pseudomonas_sp._IB3	CP034337	yes		2	79895	22	CP034337__CP034337.1.region006.gbk;CP034337__CP034337.1.region009.gbk	CP034337.region001.gbk
+known	CP038001_Pseudomonas_sp._SXM-1	CP038001	yes		1	53374	15	CP038001__CP038001.1.region012.gbk	CP038001.region001.gbk
+known	CP041189_Pseudomonas_fluorescens_DSM_50106	CP041189	yes		1	79550	24	CP041189__CP041189.1.region013.gbk	CP041189.region001.gbk
+known	CP071706_Pseudomonas_donghuensis_P482	CP071706	yes		2	68801	30	CP071706__CP071706.1.region008.gbk;CP071706__CP071706.1.region005.gbk	CP071706.region001.gbk
+known	CP081490_Pseudomonas_sp._3B19	CP081490	yes		1	56392	19	CP081490__CP081490.1.region007.gbk	CP081490.region001.gbk
+known	CP101912_Pseudomonas_aeruginosa_ATCC_27853_Pseudomonas_aerug	CP101912	yes		1	81407	39	CP101912__CP101912.1.region008.gbk	CP101912.region001.gbk
+known	CP126693_Pseudomonas_fluorescens_A225_Pseudomonas_sp._7SR1	CP126693	yes		1	53173	17	CP126693__CP126693.1.region014.gbk	CP126693.region001.gbk
+known	CP169220_Pseudomonas_fluorescens_B10	CP169220	yes		1	63036	27	CP169220__CP169220.1.region011.gbk	CP169220.region001.gbk
+known	CP176771_Pseudomonas_sp._6.10	CP176771	excluded	excluded reference	1	49562	10	CP176771__CP176771.1.region012.gbk	CP176771.region001.gbk
+known	CP189641_Pseudomonas_fulva_NBRC16639	CP189641	yes		1	68645	23	CP189641__CP189641.1.region007.gbk	CP189641.region001.gbk
+known	CT573326_Pseudomonas_entomophila_L48	CT573326	yes		1	49226	13	CT573326__CT573326.1.region014.gbk	CT573326.region001.gbk
+known	ERR13304919_Pseudomonas_shahriarae	ERR13304919	yes		3	77206	24	ERR13304919__304919_26.region001.gbk;ERR13304919__304919_27.region001.gbk;ERR13304919__304919_12.region001.gbk	ERR13304919.region001.gbk
+known	ERR13305466_Pseudomonas_asgharzadehiana	ERR13305466	yes		1	48681	11	ERR13305466__305466_6.region001.gbk	ERR13305466.region001.gbk
+known	ERR13305467_Pseudomonas_sp._unnamed_species_	ERR13305467	yes		1	27019	5	ERR13305467__305467_32.region001.gbk	ERR13305467.region001.gbk
+known	ERR13305468_Pseudomonas_sp._unnamed_	ERR13305468	yes		2	45510	14	ERR13305468__305468_36.region001.gbk;ERR13305468__305468_48.region001.gbk	ERR13305468.region001.gbk
+known	ERR13305469_Pseudomonas_sp._unnamed_species_	ERR13305469	yes		1	45304	14	ERR13305469__305469_8.region001.gbk	ERR13305469.region001.gbk
+known	ERR13305470_Pseudomonas_sp._unnamed_	ERR13305470	yes		1	51762	20	ERR13305470__305470_4.region001.gbk	ERR13305470.region001.gbk
+known	ERR13305471_Pseudomonas_sp._unnamed_	ERR13305471	yes		1	51580	16	ERR13305471__305471_6.region001.gbk	ERR13305471.region001.gbk
+known	ERR13305472_Pseudomonas_sp._unnamed_species_	ERR13305472	yes		1	54800	16	ERR13305472__305472_4.region001.gbk	ERR13305472.region001.gbk
+known	ERR13305473_Pseudomonas_germanica	ERR13305473	yes		1	44632	17	ERR13305473__305473_2.region001.gbk	ERR13305473.region001.gbk
+known	ERR13305474_Pseudomonas_danubii	ERR13305474	yes		1	56392	19	ERR13305474__305474_23.region001.gbk	ERR13305474.region001.gbk
+known	ERR13305475_Pseudomonas_sp._unnamed_species_	ERR13305475	yes		1	51954	19	ERR13305475__305475_7.region002.gbk	ERR13305475.region001.gbk
+known	ERR13305476_Pseudomonas_syringae	ERR13305476	yes		1	80101	42	ERR13305476__305476_10.region001.gbk	ERR13305476.region001.gbk
+known	ERR13305477_Pseudomonas_wadenswilerensis	ERR13305477	yes		2	80427	34	ERR13305477__305477_6.region001.gbk;ERR13305477__305477_1.region001.gbk	ERR13305477.region001.gbk
+known	ERR13305478_Pseudomonas_capeferrum	ERR13305478	yes		2	67928	19	ERR13305478__305478_8.region001.gbk;ERR13305478__305478_3.region002.gbk	ERR13305478.region001.gbk
+known	ERR13305479_Pseudomonas_sp._unnamed_species_	ERR13305479	yes		2	64976	19	ERR13305479__305479_16.region001.gbk;ERR13305479__305479_12.region001.gbk	ERR13305479.region001.gbk
+known	ERR13331614_Pseudomonas_sp._unnamed_	ERR13331614	yes		2	61582	24	ERR13331614__331614_5.region001.gbk;ERR13331614__331614_30.region001.gbk	ERR13331614.region001.gbk
+known	ERR13331615_Pseudomonas_sp._unnamed_	ERR13331615	yes		1	70946	28	ERR13331615__331615_4.region001.gbk	ERR13331615.region001.gbk
+known	GCA_000278565.1_ASM27856v1_genomic_Pseudomonas_sp._Ag1	AKVH01000000	yes		2	77714	29	GCA_000278565.1_ASM27856v1_genomic__AKVH01000095.1.region001.gbk;GCA_000278565.1_ASM27856v1_genomic__AKVH01000068.1.region001.gbk	AKVH01000000.region001.gbk
+known	GCA_000730605.1_ASM73060v1_genomic_Pseudomonas_monteilii_Lil	GCA_000730605.1	excluded	excluded reference	2	67205	26	GCA_000730605.1_ASM73060v1_genomic__BBIS01000019.1.region001.gbk;GCA_000730605.1_ASM73060v1_genomic__BBIS01000033.1.region001.gbk	GCA_000730605.1.region001.gbk
+known	GCF_045447305.1_ASM4544730v1_genomic_Pseudomonas_sp._D47	GCF_045447305.1	yes		2	64608	22	GCF_045447305.1_ASM4544730v1_genomic__NZ_JBJGXU010000014.1.region001.gbk;GCF_045447305.1_ASM4544730v1_genomic__NZ_JBJGXU010000033.1.region001.gbk	GCF_045447305.1.region001.gbk
+known	LT629746_Pseudomonas_sp._3D19	LT629746	excluded	excluded reference	1	46155	18	LT629746__LT629746.1.region009.gbk	LT629746.region001.gbk
+known	LT629801_Pseudomonas_rhodesiae_CFML_92-104	LT629801	yes		1	56889	18	LT629801__LT629801.1.region007.gbk	LT629801.region001.gbk
+known	LT707062_Pseudomonas_sp._A214_P_putida_ATCC_39167	LT707062	yes		1	53364	18	LT707062__LT707062.1.region005.gbk	LT707062.region001.gbk
+known	NC_010322_Pseudomonas_putida_CFML_90-51_Pseudomonas_putida_G	NC_010322	yes		2	75132	33	NC_010322__NC_010322.1.region012.gbk;NC_010322__NC_010322.1.region011.gbk	NC_010322.region001.gbk
+known	NZ_JENB01000000_Pseudomonas_putida_W15Oct28	NZ_JENB01000000	yes		3	69888	22	NZ_JENB01000000__NZ_JENB01000032.1.region001.gbk;NZ_JENB01000000__NZ_JENB01000006.1.region001.gbk;NZ_JENB01000000__NZ_JENB01000063.1.region001.gbk	NZ_JENB01000000.region001.gbk
+known	NZ_LT629699_Pseudomonas_libanensis_96-195	NZ_LT629699	yes		1	39474	10	NZ_LT629699__NZ_LT629699.1.region005.gbk	NZ_LT629699.region001.gbk
+known	NZ_NIZS01000000_Pseudomonas_aeruginosa_Pa6_R_P_aeruginosa_59	NZ_NIZS01000000	yes		3	70836	36	NZ_NIZS01000000__NZ_NIZS01000031.1.region001.gbk;NZ_NIZS01000000__NZ_NIZS01000061.1.region001.gbk;NZ_NIZS01000000__NZ_NIZS01000041.1.region001.gbk	NZ_NIZS01000000.region001.gbk
+known	OV986001_Pseudomonas_fluorescens_SBW25_Pseudomonas_fluoresce	OV986001	yes		1	37890	9	OV986001__OV986001.1.region004.gbk	OV986001.region001.gbk
+known	PHHD01000001_Pseudomonas_tolaasii_NCPPB_2192	PHHD01000001	yes		1	49512	10	PHHD01000001__PHHD01000001.1.region012.gbk	PHHD01000001.region001.gbk
+predicted	KP_1_d_a	KP_1_d_a	yes	no pyoverdine locus; most relevant NRPS: NRPS-like	1	43414	26	KP_1_d_a_contig_1.region001.gbk	KP_1_d_a.region001.gbk
+predicted	KP_1_w_a	KP_1_w_a	yes		2	59093	19	KP_1_w_a_contig_1.region005.gbk;KP_1_w_a_contig_1.region010.gbk	KP_1_w_a.region001.gbk
+predicted	KP_2_d_a	KP_2_d_a	yes		2	73791	36	KP_2_d_a_contig_1.region010.gbk;KP_2_d_a_contig_1.region011.gbk	KP_2_d_a.region001.gbk
+predicted	KP_2_w_b	KP_2_w_b	yes		2	63757	21	KP_2_w_b_contig_1.region007.gbk;KP_2_w_b_contig_1.region012.gbk	KP_2_w_b.region001.gbk
+predicted	KP_3_d_a	KP_3_d_a	yes		2	69024	25	KP_3_d_a_contig_1.region005.gbk;KP_3_d_a_contig_1.region013.gbk	KP_3_d_a.region001.gbk
+predicted	KP_3_w_a	KP_3_w_a	yes		2	64136	20	KP_3_w_a_contig_1.region004.gbk;KP_3_w_a_contig_1.region009.gbk	KP_3_w_a.region001.gbk
+predicted	OW_1_d_a	OW_1_d_a	yes		2	76297	35	OW_1_d_a_contig_1.region010.gbk;OW_1_d_a_contig_1.region011.gbk	OW_1_d_a.region001.gbk
+predicted	OW_1_d_b	OW_1_d_b	yes		2	76297	35	OW_1_d_b_contig_1.region010.gbk;OW_1_d_b_contig_1.region011.gbk	OW_1_d_b.region001.gbk
+predicted	OW_1_w_a	OW_1_w_a	yes		2	68803	20	OW_1_w_a_contig_1.region004.gbk;OW_1_w_a_contig_1.region011.gbk	OW_1_w_a.region001.gbk
+predicted	OW_1_w_b	OW_1_w_b	yes		2	64714	20	OW_1_w_b_contig_1.region005.gbk;OW_1_w_b_contig_1.region012.gbk	OW_1_w_b.region001.gbk
+predicted	OW_2_d_a	OW_2_d_a	yes		2	68805	28	OW_2_d_a_contig_1.region005.gbk;OW_2_d_a_contig_1.region013.gbk	OW_2_d_a.region001.gbk
+predicted	OW_2_d_b	OW_2_d_b	yes		2	76703	25	OW_2_d_b_contig_1.region004.gbk;OW_2_d_b_contig_1.region012.gbk	OW_2_d_b.region001.gbk
+predicted	OW_2_w_a	OW_2_w_a	yes		2	29439	5	OW_2_w_a_contig_1.region005.gbk;OW_2_w_a_contig_1.region003.gbk	OW_2_w_a.region001.gbk
+predicted	OW_2_w_b	OW_2_w_b	yes		2	71178	22	OW_2_w_b_contig_1.region004.gbk;OW_2_w_b_contig_1.region010.gbk	OW_2_w_b.region001.gbk
+predicted	OW_3_d_a	OW_3_d_a	yes		3	84157	30	OW_3_d_a_contig_1.region005.gbk;OW_3_d_a_contig_1.region008.gbk;OW_3_d_a_contig_1.region017.gbk	OW_3_d_a.region001.gbk
+predicted	OW_3_d_b	OW_3_d_b	yes		3	84157	30	OW_3_d_b_contig_1.region005.gbk;OW_3_d_b_contig_1.region008.gbk;OW_3_d_b_contig_1.region017.gbk	OW_3_d_b.region001.gbk
+predicted	OW_3_w_a	OW_3_w_a	yes		2	61726	19	OW_3_w_a_contig_1.region005.gbk;OW_3_w_a_contig_1.region009.gbk	OW_3_w_a.region001.gbk
+predicted	OW_3_w_b	OW_3_w_b	yes		2	65286	11	OW_3_w_b_contig_1.region006.gbk;OW_3_w_b_contig_1.region013.gbk	OW_3_w_b.region001.gbk
+predicted	SN_1_d_a	SN_1_d_a	yes		2	85021	40	SN_1_d_a_contig_1.region015.gbk;SN_1_d_a_contig_1.region004.gbk	SN_1_d_a.region001.gbk
+predicted	SN_1_w_a	SN_1_w_a	yes		2	67658	28	SN_1_w_a_contig_1.region004.gbk;SN_1_w_a_contig_1.region010.gbk	SN_1_w_a.region001.gbk
+predicted	SN_2_d_a	SN_2_d_a	yes		2	80497	45	SN_2_d_a_contig_1.region005.gbk;SN_2_d_a_contig_1.region004.gbk	SN_2_d_a.region001.gbk
+predicted	SN_2_w_b	SN_2_w_b	yes		2	68003	20	SN_2_w_b_contig_1.region006.gbk;SN_2_w_b_contig_1.region013.gbk	SN_2_w_b.region001.gbk
+predicted	SN_3_d_a	SN_3_d_a	yes		2	65241	25	SN_3_d_a_contig_1.region008.gbk;SN_3_d_a_contig_1.region009.gbk	SN_3_d_a.region001.gbk
+predicted	SN_3_w_a	SN_3_w_a_contig_1	yes	split: two organisms in one assembly	2	92518	36	SN_3_w_a_contig_1.region006.gbk;SN_3_w_a_contig_2.region004.gbk;SN_3_w_a_contig_1.region013.gbk;SN_3_w_a_contig_2.region012.gbk	SN_3_w_a_contig_1.region001.gbk
+predicted	SN_3_w_a	SN_3_w_a_contig_2	yes	split: two organisms in one assembly	2	61964	19	SN_3_w_a_contig_1.region006.gbk;SN_3_w_a_contig_2.region004.gbk;SN_3_w_a_contig_1.region013.gbk;SN_3_w_a_contig_2.region012.gbk	SN_3_w_a_contig_2.region001.gbk
+predicted	TP_1_d_a	TP_1_d_a	yes	no pyoverdine locus; most relevant NRPS: T1PKS.NRP-metallophore.NRPS	1	62609	41	TP_1_d_a_contig_1.region002.gbk	TP_1_d_a.region001.gbk
+predicted	TP_1_w_a	TP_1_w_a	yes	no pyoverdine and no NRPS; nearest siderophore locus: NI-siderophore	1	32666	27	TP_1_w_a_contig_1.region008.gbk	TP_1_w_a.region001.gbk
+predicted	TP_2_d_a	TP_2_d_a	yes	NEGATIVE CONTROL - no NRPS and no siderophore; locus: arylpolyene	1	43576	39	TP_2_d_a_contig_1.region001.gbk	TP_2_d_a.region001.gbk
+predicted	TP_2_w_b	TP_2_w_b	yes	no pyoverdine locus; most relevant NRPS: NRP-metallophore.NRPS	1	53906	44	TP_2_w_b_contig_1.region003.gbk	TP_2_w_b.region001.gbk
+predicted	TP_3_d_a	TP_3_d_a	yes	no pyoverdine locus; most relevant NRPS: T1PKS.NRP-metallophore.NRPS	1	63405	48	TP_3_d_a_contig_1.region002.gbk	TP_3_d_a.region001.gbk
+predicted	TP_3_w_a	TP_3_w_a	yes		3	81782	31	TP_3_w_a_contig_1.region008.gbk;TP_3_w_a_contig_1.region009.gbk;TP_3_w_a_contig_1.region006.gbk	TP_3_w_a.region001.gbk

@@ -1,0 +1,7 @@
+accession	paper_strain	genome_is	marker_identity_pct	provenance	curated_peptide	predicted_peptide	resolved_identity_pct	n_pred_vs_n_ref	structure_verdict	curator_comment
+LT629746	Pseudomonas sp. 3D19	Pseudomonas lini BS3782	97.76	surrogate_unflagged	Ala-Orn-Gly-Gly-Ser-Ala-Asp-Thr	Lys-Asp-Ala-Thr-Ala-?	14.3	6/8	disagreement	Unsure but top known clusters are pyoverdines
+CP176771	Pseudomonas sp. 6.10	Pseudomonas sp. MPB23 MPB23	91.69;99.38	surrogate_unflagged	Ala-Orn-Asp-Dab-Orn-Lys	Ser-Lys-Gly-Orn-Ser-Ser-Gly-Lys-Orn-Glu-Ser	18.2	11/6	disagreement	
+GCA_000730605	Pseudomonas monteilii Lille 1	Pseudomonas monteilii NBRC 103158 = DSM 14164 NBRC 103158		unresolved	Asp-Lys-Orn-Ala-Ser-Ser-Gly-Ser-Orn	Gly-Ser-?-Asp-Lys-Orn-Ala	25.0	7/9	inconclusive_fragmented_locus	
+AP039450	Pseudomonas sp. LBSA1	Pseudomonas allii To-1	99.5	surrogate_unflagged	Asp-Arg-Orn-Lys-Ser-Asp-Orn	Ser-Lys-Orn-Ser-Ser-Gly-Orn-Orn-Glu-Ser	30.0	10/7	disagreement	Very different but clear locus
+CP028517	Pseudomonas fluorescens PL7	Pseudomonas fluorescens PsChi	99.12	surrogate_unflagged	Ser-Orn-Ala-Gly-Thr-Ala-Orn	Ser-Ser-Lys-Gly-Orn-Lys-Orn-Ser	37.5	8/7	disagreement	
+CP023269	Pseudomonas putida 9AW / Pseudomonas putida 9BW	Pseudomonas sp. MYb193 MYb193		mismatch_unexplained	Ser-Lys-His-Thr-Ser-Orn	Ser-Lys-Gly-Orn-Lys-Orn-Ser	42.9	7/6	disagreement	Different pyoverdine

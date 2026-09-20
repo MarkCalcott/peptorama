@@ -1,0 +1,103 @@
+benchmarking 1 - tool and database versions
+===========================================
+Recorded 20 Sep 2026. Every version below was read from the installed tool or
+from the provenance stamped inside the data files, not from notes.
+
+Why this file matters: these results are version-sensitive. antiSMASH moves
+region boundaries between releases, BiG-SCAPE changes distances, and DiscERN
+was run from one specific commit. A rerun on different versions produces a
+result, but not this one.
+
+
+ANNOTATION (step 1)
+-------------------
+Bakta                     v1.12.0, database v6.0 (full)
+                          used for the 30 predicted-arm genomes, by Mark;
+                          stamped in each raw/predicted/*.gbk
+Prokka                    1.15.6
+                          used for the 17 assembled known-arm genomes;
+                          stamped in Assembly files/.../PROKKA_GENBANKS_17/
+SPAdes / fastp            see Assembly files/ASSEMBLED_GENOMES_17/code/
+                          (assembly of the 17 from ENA study PRJEB76792)
+
+
+BGC DETECTION (step 2)
+----------------------
+antiSMASH                 8.0.4
+                          stamped in every antiSMASH/predicted/*/*.region*.gbk
+                          as ##antiSMASH-Data-START## Version :: 8.0.4
+antiSMASH databases       clusterblast, knownclusterblast 4.0, pfam 35.0,
+                          nrps_pks, tigrfam, resfam, tfbs  (7.0 GB)
+                          fetched with download-antismash-databases
+flags                     --taxon bacteria --genefinding-tool none
+                          --cb-knownclusters --cb-subclusters
+
+  antiSMASH/known was produced by the study's original 8.0.4 run.
+  antiSMASH/predicted was regenerated 20 Sep 2026 with the same version and
+  the same flags.
+
+
+BENCHMARK INPUT (step 3)
+------------------------
+Python                    3.11.15
+Biopython                 1.88
+BLAST+                    2.16.0+   (blastp, makeblastdb)
+
+  Thresholds, both defined in the script:
+    PVD_NRPS_MIN_ID            45.0 % identity
+    PVD_NRPS_MIN_BITS_PER_AA   0.50 bits per query residue
+  A synthetase passes on either criterion. Neither alone classifies every
+  calibration case correctly: percent identity alone misses P. putida G4R
+  PvdJ at 44.3 %, and bits-per-residue alone truncates long synthetases whose
+  similarity is unevenly distributed.
+
+
+DOWNSTREAM TOOLS (not run by this folder's scripts)
+---------------------------------------------------
+BiG-SCAPE                 2.0.3
+  Pfam-A                  EBI current_release at time of run
+  flags                   cluster --alignment-mode glocal --include-singletons
+                          --record-type region --cores 10
+  cutoff                  0.30 (BiG-SCAPE default; not tuned for pyoverdines)
+  --mibig-version         deliberately NOT used: it writes into BiG-SCAPE's own
+                          read-only install directory, and no MIBiG comparison
+                          was wanted
+
+DiscERN                   0.1.0, commit 716e932418c30ffda587964b0d1b0edf04ade3d2
+  repository              github.com/MaxMeta/DiscERN
+  BiG-SLiCE models        2022-11-30, md5 aaabde911ec107d08e5c24f68aaf31d1
+                          must sit at discern/bigslice_models; no flag relocates them
+  patch                   discern_ref_dir_patch.diff is REQUIRED - three call
+                          sites hand a globbed file list to functions expecting
+                          a directory, so -r <directory> raises TypeError
+                          without it
+  flags                   -k 2
+  -k 2 is mandatory, not a preference: only two of the four algorithms are
+  active without --poly_search, so at the default -k 3 nothing is found and
+  the dendrograms are built from the references alone - while exiting 0.
+
+HMMER                     3.4 (Aug 2023)
+HMMER2 (hmmpfam2)         2.3.2 - separate package from HMMER3, required by
+                          DiscERN's clusterblast stage
+MAFFT                     v7.526
+
+
+PORTABILITY
+-----------
+None of the scripts hardcode an interpreter, tool path or environment. Each
+resolves its tools from PATH and accepts an override:
+
+    BIGSCAPE=/path/to/bigscape  PFAM=/path/to/Pfam-A.hmm  ./run_bigscape.sh
+    DISCERN_SRC=/path/to/DiscERN  PY=python3              ./run_discern.sh
+
+Pfam is not shipped (1.5 GB). Fetch and press it with:
+
+    wget https://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz
+    gunzip Pfam-A.hmm.gz && hmmpress Pfam-A.hmm
+
+
+DATA PROVENANCE
+---------------
+ENA study                 PRJEB76792  (reads for the 17 assembled genomes;
+                          17 runs, 17 samples, no assemblies deposited)
+predicted-arm genomes     unpublished isolates, no public accessions
