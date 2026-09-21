@@ -13,7 +13,7 @@ import re
 import os
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-FRONTEND_DIST = PROJECT_ROOT / "frontend" / "dist"
+FRONTEND_DIST = PROJECT_ROOT / "frontend" / "dist_test"
 
 app = FastAPI()
 
