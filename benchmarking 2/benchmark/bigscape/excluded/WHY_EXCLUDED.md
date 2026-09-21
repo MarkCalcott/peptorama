@@ -3,22 +3,16 @@
 **Six accessions are excluded, and they are the six specified:**
 `LT629746`, `CP176771`, `GCA_000730605`, `AP039450`, `CP028517`, `CP023269`.
 
-Two others were wrongly held out in an earlier version of this folder and are
-now **analysed**, not excluded:
+`CP034337` (*Pseudomonas* sp. IB3) and `CP011835` (*Azomonas macrocytogenes*)
+are **analysed, not excluded**. The former is a declared surrogate genome,
+which warrants caution in interpreting its structure comparison but is not a
+reason to withhold it from clustering. The latter has no pyoverdine locus and
+is represented by its azotobactin cluster, which shares the pyoverdine
+chromophore, entering the comparison as a near-miss outgroup.
 
-- `CP034337` (*Pseudomonas* sp. IB3) — the workbook declares it a surrogate
-  genome, which is a reason to treat its structure comparison with caution,
-  not a reason to drop it from clustering. It was never on the exclusion list.
-- `CP011835` (*Azomonas macrocytogenes*) — makes azotobactin, which shares the
-  pyoverdine chromophore. It has no pyoverdine locus, so it is staged from its
-  NRP-metallophore region (the azotobactin cluster) and enters the comparison
-  as a near-miss outgroup, which is more informative than its absence.
-
-
-
-Read back from `pyoverdine_paper_provenance.tsv` and
+Evidence drawn from `pyoverdine_paper_provenance.tsv` and
 `pyoverdine_structure_comparison.tsv`. Per-accession detail with every field
-is in `why_excluded_8.tsv` beside this note.
+is in `why_excluded_6.tsv` beside this note.
 
 **The prediction is not what failed in any of these six.** The structure
 in the workbook is real and comes from a paper; the *genome* attached to it

@@ -25,6 +25,7 @@
 /*
 !/.gitignore
 !/README.md
+!/PROJECT_SUMMARY.md
 !/VERSIONS.txt
 
 # --- step 1: raw genomes ----------------------------------------------------
@@ -57,13 +58,12 @@
 # tracked even though it sits inside a results directory
 !/benchmark/discern/
 /benchmark/discern/*
-!/benchmark/discern/DISCERN_KNOWN_REFS_RESULTS/
-/benchmark/discern/DISCERN_KNOWN_REFS_RESULTS/*
-!/benchmark/discern/DISCERN_KNOWN_REFS_RESULTS/discern_k2_g30_new/
-/benchmark/discern/DISCERN_KNOWN_REFS_RESULTS/discern_k2_g30_new/*
-!/benchmark/discern/DISCERN_KNOWN_REFS_RESULTS/discern_k2_g30_new/*.diff
-!/benchmark/discern/DISCERN_KNOWN_REFS_RESULTS/discern_k2_g30_new/*.md
-!/benchmark/discern/DISCERN_KNOWN_REFS_RESULTS/discern_k2_g30_new/*.sh
+# The DiscERN patch is required to run the tool at all, so it is tracked even
+# though it sits inside the analysis tree.
+!/benchmark/discern/
+/benchmark/discern/*
+!/benchmark/discern/*.diff
+!/benchmark/discern/*.tsv
 
 # --- results: excluded for now ----------------------------------------------
 # bigscape/results/ holds three SQLite distance databases and the BiG-SCAPE web

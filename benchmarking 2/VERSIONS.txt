@@ -67,7 +67,7 @@ DiscERN                   0.1.0, commit 716e932418c30ffda587964b0d1b0edf04ade3d2
   repository              github.com/MaxMeta/DiscERN
   BiG-SLiCE models        2022-11-30, md5 aaabde911ec107d08e5c24f68aaf31d1
                           must sit at discern/bigslice_models; no flag relocates them
-  patch                   discern_ref_dir_patch.diff is REQUIRED - three call
+  patch                   discern_patches.diff is REQUIRED - three call
                           sites hand a globbed file list to functions expecting
                           a directory, so -r <directory> raises TypeError
                           without it

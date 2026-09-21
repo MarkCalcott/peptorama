@@ -44,10 +44,13 @@ Outputs: <out>/bigscape/{known,predicted}/<label>.region001.gbk
 """
 import os, re, csv, glob, shutil, tempfile, argparse, subprocess, collections
 
-from Bio import SeqIO
-from Bio.Seq import Seq
-from Bio.SeqRecord import SeqRecord
-from Bio.SeqFeature import SeqFeature, FeatureLocation
+try:
+    from Bio import SeqIO
+    from Bio.Seq import Seq
+    from Bio.SeqRecord import SeqRecord
+    from Bio.SeqFeature import SeqFeature, FeatureLocation
+except ImportError:
+    raise SystemExit("FATAL: biopython is required (pip install biopython)")
 
 
 # --------------------------------------------------------------------------
@@ -209,6 +212,20 @@ def trim_record(rec, keep, flank=0):
     sub.annotations = ann
     return sub, lo, hi
 
+# Two criteria for calling an NRPS a pyoverdine synthetase, applied
+# disjunctively -- either one passing is enough.
+#
+# Percent identity alone misses divergent orthologues: the genuine PvdJ of
+# P. putida G4R aligns at 44.3%, below any cut that would still exclude
+# unrelated synthetases. Bitscore per query residue alone truncates long
+# synthetases whose orthology is strong but whose similarity is unevenly
+# distributed along the protein.
+#
+# Unrelated NRPS in the same region fail both: the viscosin synthetases of
+# P. fluorescens SBW25 sit at 37.9-38.9% identity and 0.25-0.36 bits/aa,
+# against 0.62-1.09 bits/aa for pyoverdine synthetases. Bitscore per residue
+# separates them because it rewards full-length orthology rather than local
+# similarity across the A/C/T domains that every NRPS shares.
 PVD_NRPS_MIN_ID = 45.0
 
 PVD_NRPS_MIN_BITS_PER_AA = 0.50

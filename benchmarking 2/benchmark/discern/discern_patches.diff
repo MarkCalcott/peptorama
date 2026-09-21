@@ -1,0 +1,110 @@
+diff --git a/discern/discern.py b/discern/discern.py
+index 2942045..fe126d1 100644
+--- a/discern/discern.py
++++ b/discern/discern.py
+@@ -202,18 +202,23 @@ def main():
+ 
+         ref_labels=[os.path.split(i)[-1].rsplit(".",1)[0] for i in ref_set_bs]
+         
+-        ref_bs_vecs=make_sparse_dict(ref_set_bs,db_dir,num_cpus=num_cpus,
++        # PATCH (ref_dir_pathtype): make_sparse_dict/parse_cb_outputs/make_polymer_dict
++        # take a DIRECTORY plus a glob_pattern and do the globbing themselves.
++        # Upstream passed the already-globbed lists (ref_set_bs/_cb/_pol), which
++        # raises TypeError in os.path.join. Passing ref_set with the same glob
++        # patterns yields exactly the file lists globbed above at lines 189-192.
++        ref_bs_vecs=make_sparse_dict(ref_set,db_dir,num_cpus=num_cpus,
+                                      glob_pattern="*.gbk")        
+         ref_bs_vecs_rf={os.path.split(key)[-1].rsplit(".",1)[0]:ref_bs_vecs[key]\
+                         for key in ref_bs_vecs}
+         ref_bs_vecs=ref_bs_vecs_rf
+         
+-        ref_cb_vecs=parse_cb_outputs(ref_set_cb,glob_pattern="*.txt")
++        ref_cb_vecs=parse_cb_outputs(ref_set,glob_pattern="*.txt")  # PATCH ref_dir_pathtype
+         ref_cb_vecs_rf={os.path.split(key)[-1].rsplit(".",1)[0]:ref_cb_vecs[key]\
+                         for key in ref_cb_vecs}
+         ref_cb_vecs=ref_cb_vecs_rf
+         
+-        ref_pol_vecs=make_polymer_dict(ref_set_pol,glob_pattern="*.json",as6=as6)
++        ref_pol_vecs=make_polymer_dict(ref_set,glob_pattern="*.json",as6=as6)  # PATCH ref_dir_pathtype
+         ref_pol_vecs_rf={os.path.split(key)[-1].rsplit(".",1)[0]:ref_pol_vecs[key]\
+                         for key in ref_pol_vecs}
+         ref_pol_vecs=ref_pol_vecs_rf
+diff --git a/discern/vector_tools.py b/discern/vector_tools.py
+index 375d641..c294c18 100644
+--- a/discern/vector_tools.py
++++ b/discern/vector_tools.py
+@@ -648,36 +648,51 @@ def make_trees(out_folder_path,
+         labels=list(pol_subset.keys())
+         pol_ax.figure.savefig(os.path.join(out_folder_path,'pol_denrogram.pdf'))
+ 
++    # PATCH (zero_vector_dendrogram): plot_hclust_dendrogram uses cosine
++    # distance, which is undefined for an all-zero vector - pdist then returns
++    # NaN and linkage raises "condensed distance matrix must contain only
++    # finite values". A hit can legitimately have an empty clusterblast vector
++    # (its region has no significant MIBiG hit, or it entered on BiG-SLiCE
++    # support alone), which is common with a small, single-product reference
++    # set. The combined tree averages the bs and cb condensed matrices, so a
++    # member must be dropped from BOTH spaces or the two matrices no longer
++    # describe the same pairs. Both spaces collect members in the same order,
++    # so one keep-list serves both.
++    _sub = {}
+     if use_bs:
+-        bs_subset={}
+-        #pol_subset_labels=[] #just use vecs_to_use + ref
++        s = {}
+         for vec in vecs_to_use:
+-            
+-            bs_subset[split_on_second_to_last(vec)[-1]]=bs_vecs[vec]
+-
++            s[split_on_second_to_last(vec)[-1]] = bs_vecs[vec]
+         for ref in refs:
+-            bs_subset[ref]=mibig_vecs_bs[ref]
+-           
+-        bs_subset=make_dense_vectors(bs_subset)
+-        bs_ax, bs_mat=plot_hclust_dendrogram(bs_subset)
+-        labels=list(bs_subset.keys())
+-        bs_ax.figure.savefig(os.path.join(out_folder_path,'bs_denrogram.pdf'))
+-
++            s[ref] = mibig_vecs_bs[ref]
++        _sub["bs"] = make_dense_vectors(s)
+ 
+     if use_cb:
+-        cb_subset={}
+-        #pol_subset_labels=[] #just use vecs_to_use + ref
++        s = {}
+         for vec in vecs_to_use:
+-            cb_key=reformat_path_2(vec)
+-            cb_subset[split_on_second_to_last(vec)[-1]]=cb_vecs[cb_key]
+-
++            s[split_on_second_to_last(vec)[-1]] = cb_vecs[reformat_path_2(vec)]
+         for ref in refs:
+-            cb_subset[ref]=mibig_vecs_cb[ref]
+-            
+-        cb_subset=make_dense_vectors(cb_subset)
+-        cb_ax, cb_mat=plot_hclust_dendrogram(cb_subset)
+-        labels=list(cb_subset.keys())
+-        cb_ax.figure.savefig(os.path.join(out_folder_path,'cb_denrogram.pdf'))
++            s[ref] = mibig_vecs_cb[ref]
++        _sub["cb"] = make_dense_vectors(s)
++
++    _drop = {k for d in _sub.values() for k, v in d.items() if not np.any(v)}
++    if _drop:
++        print(f"dendrogram: dropping {len(_drop)} member(s) with an all-zero "
++              f"vector in at least one algorithm space")
++        _sub = {sp: {k: v for k, v in d.items() if k not in _drop}
++                for sp, d in _sub.items()}
++
++    if use_bs:
++        bs_subset = _sub["bs"]
++        bs_ax, bs_mat = plot_hclust_dendrogram(bs_subset)
++        labels = list(bs_subset.keys())
++        bs_ax.figure.savefig(os.path.join(out_folder_path, 'bs_denrogram.pdf'))
++
++    if use_cb:
++        cb_subset = _sub["cb"]
++        cb_ax, cb_mat = plot_hclust_dendrogram(cb_subset)
++        labels = list(cb_subset.keys())
++        cb_ax.figure.savefig(os.path.join(out_folder_path, 'cb_denrogram.pdf'))
+ 
+             
+ 
