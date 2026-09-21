@@ -153,7 +153,6 @@ references alone while exiting successfully.
 
 ```
 README.md                 this file
-PROJECT_SUMMARY.md        informal account of what was done and why
 VERSIONS.txt              every tool and database version
 
 raw/                      step1_assemble_annotate.sh
