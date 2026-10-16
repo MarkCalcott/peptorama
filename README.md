@@ -43,6 +43,7 @@ Run the app in two terminals as below.
 
 ```bash
 cd backend
+conda activate peptorama
 pytest
 pytest --cov=peptorama
 ```
