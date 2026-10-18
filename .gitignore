@@ -3,16 +3,16 @@ frontend/node_modules/
 frontend/dist/
 frontend/build/
 
+# Benchmarking data
+benchmarking/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
 *$py.class
 
-
 # Distribution / packaging
 .Python
-build/
-dist/
 *.egg-info/
 
 # Unit test / coverage reports
