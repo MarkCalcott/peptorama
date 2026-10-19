@@ -105,7 +105,7 @@ export default function UploadCard() {
               <span className="upload-icon">↑</span>Diverse peptides
             </Button>
             <Button
-              onClick={() => alert("Temp button: Please use other example")}
+              onClick={() => handleExample("inputAntibiotics")}
               variant="example"
               size="medium"
               tooltip="Retrospective example for the discovery of calcium dependent antibiotics"

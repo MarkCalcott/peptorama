@@ -30,9 +30,9 @@ def _process_source(input_text, origin, output, start_idx):
 
     # Header detection
     first_cells = [x.strip() for x in lines[0].split(",")]
-    has_header = bool(
-        re.match(r"^peptides?$", first_cells[0], re.IGNORECASE)
-        or re.match(r"^smiles$", first_cells[0], re.IGNORECASE)
+    has_header = any(
+        re.match(r"^(peptides?|smiles)$", cell, re.IGNORECASE)
+        for cell in first_cells
     )
 
     if has_header:

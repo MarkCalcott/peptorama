@@ -18,9 +18,15 @@ export const INFO_MESSAGES = {
         These are selected to highlight automated generation and visualation of
         diverse structures.
       </p>
+    </>
+  ),
+  inputAntibiotics: () => (
+    <>
+      <h3>Retrospective antibiotic discovery</h3>
       <p>
-        Click "Build network" within the upload panel to create and view the
-        network.
+        A collection of calcium dependent antibiotics with recent discoveries
+        treated as unknown pepties. Gramicidin S and tyrocidine A serve as a
+        non-CDA antibiotic. Structures represent only the linear peptide chains.
       </p>
     </>
   ),

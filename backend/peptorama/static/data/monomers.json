@@ -54,6 +54,22 @@
     "smiles": "[*:1]C1NC(CCN=1)C(=O)[*:2]",
     "category": "Non-proteinogenic"
   },
+  "Dap": {
+    "exact": "Dap",
+    "base": "Dap",
+    "stereochemistry": "flat",
+    "name": "3-methyl-2,3-diaminopropionic acid",
+    "smiles": "[*:1]NC(CN[*:3])C(=O)[*:2]",
+    "category": "Non-proteinogenic"
+  },
+  "Me-Dap": {
+    "exact": "Me-Dap",
+    "base": "Dap",
+    "stereochemistry": "flat",
+    "name": "3-methyl-2,3-diaminopropionic acid",
+    "smiles": "[*:1]NC(C(C)N[*:3])C(=O)[*:2]",
+    "category": "Non-proteinogenic"
+  },
   "Gly": {
     "exact": "Gly",
     "base": "Gly",
@@ -158,12 +174,52 @@
     "smiles": "[*:1]N1CCC[C@@H]1C(=O)[*:2]",
     "category": "Proteinogenic"
   },
+  "L-Me-Pro": {
+    "exact": "Me-Pro",
+    "base": "Pro",
+    "stereochemistry": "L",
+    "name": "Methyl proline",
+    "smiles": "[*:1]N1CC(C)C[C@H]1C(=O)[*:2]",
+    "category": "Proteinogenic"
+  },
+  "Pip": {
+    "exact": "Pip",
+    "base": "Pip",
+    "stereochemistry": "flat",
+    "name": "Pipecolic acid",
+    "smiles": "[*:1]N1CCCCC1C(=O)[*:2]",
+    "category": "Proteinogenic"
+  },
+  "L-Pip": {
+    "exact": "Pip",
+    "base": "Pip",
+    "stereochemistry": "L",
+    "name": "Pipecolic acid",
+    "smiles": "[*:1]N1CCCC[C@H]1C(=O)[*:2]",
+    "category": "Proteinogenic"
+  },
+  "D-Pip": {
+    "exact": "Pip",
+    "base": "Pip",
+    "stereochemistry": "D",
+    "name": "Pipecolic acid",
+    "smiles": "[*:1]N1CCCC[C@@H]1C(=O)[*:2]",
+    "category": "Proteinogenic"
+  },
   "Phe": {
     "exact": "Phe",
     "base": "Phe",
     "stereochemistry": "flat",
     "name": "Phenylalanine",
     "smiles": "[*:1]NC(Cc1ccccc1)C(=O)[*:2]",
+    "category": "Proteinogenic"
+  },
+  "OH-Phe": {
+    "exact": "OH-Phe",
+    "base": "Phe",
+    "stereochemistry": "flat",
+    "name": "Hydroxy phenylalanine",
+    "smiles": "[*:1]NC(C(O)c1ccccc1)C(=O)[*:2]",
     "category": "Proteinogenic"
   },
   "Trp": {
@@ -254,6 +310,14 @@
     "smiles": "[*:1]NC(CC(=O)O[*:3])C(=O)[*:2]",
     "category": "Proteinogenic"
   },
+  "Me-Asp": {
+    "exact": "Me-Asp",
+    "base": "Asp",
+    "stereochemistry": "flat",
+    "name": "Methyl aspartic acid",
+    "smiles": "[*:1]NC([C@H](C)C(=O)O[*:3])C(=O)[*:2]",
+    "category": "Proteinogenic"
+  },
   "OH-Asp": {
     "exact": "OH-Asp",
     "base": "Asp",
@@ -268,6 +332,14 @@
     "stereochemistry": "flat",
     "name": "Glutamic acid",
     "smiles": "[*:1]NC(CCC(=O)O[*:3])C(=O)[*:2]",
+    "category": "Proteinogenic"
+  },
+  "Me-Glu": {
+    "exact": "Me-Glu",
+    "base": "Glu",
+    "stereochemistry": "flat",
+    "name": "Methyl glutamic acid",
+    "smiles": "[*:1]NC(C(C)CC(=O)O[*:3])C(=O)[*:2]",
     "category": "Proteinogenic"
   },
   "Asn": {
@@ -292,6 +364,14 @@
     "stereochemistry": "flat",
     "name": "Glutamine",
     "smiles": "[*:1]NC(CCC(=O)N)C(=O)[*:2]",
+    "category": "Proteinogenic"
+  },
+  "Me-Gln": {
+    "exact": "Me-Gln",
+    "base": "Gln",
+    "stereochemistry": "flat",
+    "name": "Methyl glutamine",
+    "smiles": "[*:1]NC(C(C)CC(=O)N)C(=O)[*:2]",
     "category": "Proteinogenic"
   },
   "Lys": {
@@ -341,5 +421,22 @@
     "name": "DH malonate",
     "smiles": "[*:1]/C=C/C(=O)[*:2]",
     "category": "Polyketide"
+  },
+  "Kyn": {
+    "exact": "Kyn",
+    "base": "Kyn",
+    "stereochemistry": "flat",
+    "name": "Kynurenine",
+    "smiles": "[*:1]NC(CC(=O)C1C(N)=CC=CC=1)C(=O)[*:2]",
+    "category": "Polyketide"
+  },
+  "D-Hpg": {
+    "exact": "Hpg",
+    "base": "Hpg",
+    "stereochemistry": "flat",
+    "name": "4-hydroxyphenylglycine",
+    "smiles": "[*:1]NC(C1=CC=C(O)C=C1)C(=O)[*:2]",
+    "category": "Non-proteinogenic",
+    "known": "User-defined"
   }
 }
