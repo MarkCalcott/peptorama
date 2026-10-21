@@ -12,7 +12,7 @@ P. fluorescens 51W,P. fluorescens ,51W,Suca|Suc,Pyoverdine,D-Ala-D-Lys-Gly-Gly-D
 P. aptata ,P. aptata,NA,Suca,Pyoverdine,D-Ala-L-Lys-L-Thr-D-Ser-L-Ac-OH-Orn-(L-OH-Orn),1,II,7
 P. libanensis 96-195,P. libanensis ,96-195,Suc|Suca,NA,Ala-Orn-OH-Asp-Ser-Orn-Ser-(OH-Orn),1,II,8
 P. putida 3b,P. putida,3b,NA,NA,L-Asp-L-Ac-OH-Orn/L-azDab-L-Thr-D-Ala-L-Thr-L-Thr-D-Gln-(L-OH-Orn),1,II,8
-Pseudomonas sp. LBSA1,Pseudomonas sp. ,LBSA1,Suc|Suca,NA,Asp-Arg-Ac-OH-Orn-Lys-Ser-Asp-(OH-Orn),1,II,8
+Pseudomonas sp. LBSA1,Pseudomonas sp. ,LBSA1,Suc|Suca,NA,Asp-Arg-Ac-OH-Orn-Lys-Ser-Asp-(OH-Orn),1,II,8
 P. monteilii Lille 1,P. monteilii ,Lille 1,Kgl,Pyoverdine,Asp-Lys-Ac-OH-Orn-Ala-Ser-Ser-Gly-Ser-(OH-Orn),1,II,8
 Pseudomonas sp. HR6,Pseudomonas sp. ,HR6,Suc|Suca,Pyoverdine,Asp-eLys-OH-Asp-Ser-Ser-Thr-Thr-Thr-(OH-Orn),1,II,8
 P. putida GS43,P. putida ,GS43,Suc|Suca,Pyoverdine,Lys-OH-Asp-Ser-Ser-Ser-(OH-Orn),1,II,8
@@ -27,7 +27,7 @@ Pseudomonas sp. G76,Pseudomonas sp. ,G76,Kgl,Pyoverdine,Ser-Ser-Fo-OH-Orn-Ser-Se
 P. putida G172,P. putida ,G172,Suc|Suca,Pyoverdine,Ala-Lys-Dab-OH-Asp-(Thr-Gly-OH-Asp-Gly-Thr-Thr),3,I,8
 P. fluorescens Pf0-1,P. fluorescens ,Pf0-1,Suc|Suca,Pyoverdine,Ala-Ac-OH-Orn-Orn-Ser-Ser-Ser-Arg-OH-Asp-Thr,4,III,8
 P. putida BTP1,P. putida ,BTP1,Glu,Isopyoverdine,L-Asp-L-Ala-L-Asp-D-Ac-OH-Orn-L-Ser-(L-OH-Orn),1,II,9
-P. donghuensis P482,P. donghuensis ,P482,Suc,Pyoverdine,Asp-Arg-Fo-OH-Orn-Gln-Fo-Ser-Asp-(OH-Orn),1,II,10
+P. donghuensis P482,P. donghuensis,P482,Suc,Pyoverdine,Asp-Arg-Fo-OH-Orn-Gln-Fo-Ser-Asp-(OH-Orn),1,II,10
 P. putida biovar B CFBP 11370,P. putida  ,biovar B CFBP 11370,Mal,Pyoverdine,L-Asp-L-eLys-D-OH-Asp-D-Ser-L-Ala-D-Ser-(L-OH-Orn),1,II,11
 P. putida CFBP 2461,P. putida ,CFBP 2461,Suca,Pyoverdine,L-Asp-L-eLys-D-OH-Asp-L-Ser-D-Thr-D-Ala-L-Thr-D-Lys-(L-OH-Orn),1,II,12
 P. putida ATCC 39167,P. putida ,ATCC 39167,Mala,Pyoverdine,D-Ser-D-Ac-OH-Orn-L-Ala-Gly-(D-Ser-L-Ala-L-OH-Asp-L-Thr),3,I,12
