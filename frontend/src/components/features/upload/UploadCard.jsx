@@ -113,10 +113,10 @@ export default function UploadCard() {
               <span className="upload-icon">↑</span>Antibiotics
             </Button>
             <Button
-              onClick={() => alert("Temp button: Please use other example")}
+              onClick={() => handleExample("inputSiderophores")}
               variant="example"
               size="medium"
-              tooltip="Example showing the discovery of pyoverdines (a class of iron-binding siderophores)"
+              tooltip="Biodiscovery of pyoverdine peptide chains"
             >
               <span className="upload-icon">↑</span>Siderophores
             </Button>

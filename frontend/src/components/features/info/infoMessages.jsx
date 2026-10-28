@@ -30,6 +30,15 @@ export const INFO_MESSAGES = {
       </p>
     </>
   ),
+  inputSiderophores: () => (
+    <>
+      <h3>Biodiscovery of pyoverdine siderophores</h3>
+      <p>
+        A comparison of all known pyoverdine peptide chains with antiSMASH
+        results from 30 environmentally isolated bacteria.
+      </p>
+    </>
+  ),
   knownUpload: () => (
     <>
       <h3>Known peptide upload</h3>

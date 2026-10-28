@@ -1,6 +1,9 @@
 # Pyoverdines
 
-Lists of pyoverdine peptide chains and genomic sequences used in the study.
+Lists of pyoverdine peptide chains and genomic sequences used in the study. The
+sidereophore example of Peptorama can be recreated by uploading
+`pyoverdine_known_cluster.csv` and `antiSMASH_predicted_peptides.csv` to the
+known and unknown sections of the upload panel, respectively.
 
 ## File overview
 

@@ -25,7 +25,7 @@
           "L-Pro"
         ],
         "metadata": {
-          "type": "CDA"
+          "Type": "CDA"
         }
       },
       {
@@ -50,7 +50,7 @@
           "L-Pro"
         ],
         "metadata": {
-          "type": "CDA"
+          "Type": "CDA"
         }
       },
       {
@@ -77,7 +77,7 @@
           "L-Kyn"
         ],
         "metadata": {
-          "type": "CDA"
+          "Type": "CDA"
         }
       },
       {
@@ -104,7 +104,7 @@
           "Trp"
         ],
         "metadata": {
-          "type": "CDA"
+          "Type": "CDA"
         }
       },
       {
@@ -129,7 +129,7 @@
           "L-Trp"
         ],
         "metadata": {
-          "type": "CDA"
+          "Type": "CDA"
         }
       },
       {
@@ -153,7 +153,7 @@
           "L-Leu"
         ],
         "metadata": {
-          "type": "Non-CDA"
+          "Type": "Non-CDA"
         }
       },
       {
@@ -172,7 +172,7 @@
           "L-Leu"
         ],
         "metadata": {
-          "type": "Non-CDA"
+          "Type": "Non-CDA"
         }
       },
       {
@@ -196,7 +196,7 @@
           "L-Me-Pro"
         ],
         "metadata": {
-          "type": "unknown"
+          "Type": "unknown"
         }
       },
       {
@@ -221,7 +221,7 @@
           "L-Val"
         ],
         "metadata": {
-          "type": "unknown"
+          "Type": "unknown"
         }
       }
     ],
@@ -810,10 +810,10 @@
       "known": 7,
       "predicted": 2,
       "known_order": [
-        "type"
+        "Type"
       ],
       "predicted_order": [
-        "type"
+        "Type"
       ]
     },
     "warnings": [],
