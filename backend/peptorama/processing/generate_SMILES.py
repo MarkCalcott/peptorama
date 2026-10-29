@@ -252,7 +252,6 @@ def generate_smiles(peptide: object, monomers: dict) -> str:
     # Check with RDKit
     mol = Chem.MolFromSmiles(smiles_peptide)
     if not mol:
-        print (smiles_peptide)
         return None
 
     return Chem.MolToSmiles(mol)

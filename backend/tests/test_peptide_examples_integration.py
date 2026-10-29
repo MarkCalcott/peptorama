@@ -209,7 +209,6 @@ def test_multiple_peptide_input():
         user_monomers,
     )
     for peptide in result["peptides"]:
-        print (peptide)
         mol1 = Chem.MolFromSmiles(peptide["smiles"])
         mol2 = Chem.MolFromSmiles(pubchem[int(peptide["metadata"]["PubChemCID"])])
         assert Chem.MolToSmiles(mol1) == Chem.MolToSmiles(mol2)
