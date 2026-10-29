@@ -102,6 +102,14 @@ user_monomers = {
         "smiles": "[*:1]NC([C@H](O)C1=CC(Cl)=C(O([*:5]))C=C1)C(=O)[*:2]",
         "category": "Non-proteinogenic",
     },
+    "D-Hpg": {
+            "exact": "D-Hpg",
+            "base": "Hpg",
+            "stereochemistry": "flat",
+            "name": "4-hydroxyphenylglycine",
+            "smiles": "[*:1]N[C@H](C1=CC([*:6])=C(O)C=C1)C(=O)[*:2]",
+            "category": "Non-proteinogenic",
+        },
     "gvHpg": {
         "exact": "gvHpg",
         "base": "Hpg",
@@ -110,14 +118,7 @@ user_monomers = {
         "smiles": "[*:1]NC(C1=CC([*:5])=C(O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O[C@@H]3O[C@@H](C)[C@@H](O)[C@@](C)(N)C3)C([*:5])=C1)C(=O)[*:2]",
         "category": "Non-proteinogenic",
     },
-    "Hpg": {
-        "exact": "Hpg",
-        "base": "",
-        "stereochemistry": "flat",
-        "name": "4-hydroxyphenylglycine",
-        "smiles": "[*:1]NC(C1=CC([*:6])=C(O)C=C1)C(=O)[*:2]",
-        "category": "Non-proteinogenic",
-    },
+
     "Dpg": {
         "exact": "Dpg",
         "base": "Dpg",
@@ -208,6 +209,7 @@ def test_multiple_peptide_input():
         user_monomers,
     )
     for peptide in result["peptides"]:
+        print (peptide)
         mol1 = Chem.MolFromSmiles(peptide["smiles"])
         mol2 = Chem.MolFromSmiles(pubchem[int(peptide["metadata"]["PubChemCID"])])
         assert Chem.MolToSmiles(mol1) == Chem.MolToSmiles(mol2)
