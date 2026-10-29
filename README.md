@@ -34,7 +34,7 @@ Then open http://localhost:8000 in your browser.
 
 ### Development install
 
-For users who want to modify the frontend. First perform the quick install.
+For users who want to modify the frontend. First perform the quick install and then...
 
 Build the frontend:
 
@@ -65,9 +65,18 @@ Then open http://localhost:5173 in your browser.
 
 ## Testing
 
+Run tests for the python scripts
+
 ```bash
 cd backend
 conda activate peptorama
 pytest
 pytest --cov=peptorama
+```
+
+Run tests for frontend
+
+```bash
+cd frontend
+npx vitest
 ```
