@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useChartJs } from "./useChartJs";
-import { createPeptWorkChart } from "./createPeptWorkChart";
+import { createPeptWorkChart } from "./createPeptworkChart";
 import Button from "@/components/ui/Button";
 import styles from "./PeptworkChart.module.css";
 

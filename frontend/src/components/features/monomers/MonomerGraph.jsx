@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { PeptWorkChart } from "@/lib/charts/PeptWorkChart";
+import { PeptWorkChart } from "@/lib/charts/PeptworkChart";
 import { computeChartData } from "./computeChartData";
 import Button from "@/components/ui/Button";
 import styles from "./Monomers.module.css";

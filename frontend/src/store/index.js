@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { createLayoutSlice } from "./layoutSlice";
-import { createJobSlice } from "./JobSlice";
-import { createViewSlice } from "./ViewSlice";
+import { createJobSlice } from "./jobSlice";
+import { createViewSlice } from "./viewSlice";
 import { immer } from "zustand/middleware/immer";
 
 function combineSlices(...slices) {

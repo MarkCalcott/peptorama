@@ -1,4 +1,4 @@
-import { PeptWorkChart } from "@/lib/charts/PeptWorkChart";
+import { PeptWorkChart } from "@/lib/charts/PeptworkChart";
 
 export default function IndividualGraph({ field, data }) {
   return (

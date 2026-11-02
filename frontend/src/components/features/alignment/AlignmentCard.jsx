@@ -3,7 +3,7 @@ import Card from "@/components/ui/Card";
 import useStore from "@/store";
 
 import Button from "@/components/ui/Button";
-import styles from "./alignment.module.css";
+import styles from "./Alignment.module.css";
 
 function getAlignmentInfo(edgeId, peptideIdA, peptideIdB) {
   const monomersA = useStore.getState().peptidesById[peptideIdA];

@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { PeptWorkChart } from "@/lib/charts/PeptWorkChart";
+import { PeptWorkChart } from "@/lib/charts/PeptworkChart";
 import { computeFieldChart } from "./metadata";
 
 export default function PeptideSection({ data, fields }) {
