@@ -68,7 +68,7 @@ Then open http://localhost:5173 in your browser.
 
 ## Testing
 
-Run tests for the python scripts
+Run tests for the backend
 
 ```bash
 cd backend
