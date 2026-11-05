@@ -19,7 +19,7 @@
         "stereochemistry": [
           "relaxed"
         ],
-        "cutoff": 40
+        "cutoff": 35
       },
       "tanimoto": {
         "radius": [

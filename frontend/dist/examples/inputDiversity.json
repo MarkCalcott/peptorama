@@ -1,286 +1,10 @@
 {
-  "kind": "network",
-  "savedAt": "2026-10-18T21:46:52.144Z",
-  "data": {
-    "peptides": [
-      {
-        "id": "p_1",
-        "number": 1,
-        "name": "Tyrocidine A",
-        "origin": "known",
-        "peptide": "[D-Phe-L-Pro-L-Phe-D-Phe-L-Asn-L-Gln-L-Tyr-L-Val-L-Orn-L-Leu]",
-        "smiles": "CC(C)C[C@@H]1NC(=O)[C@H](CCCN)NC(=O)[C@H](C(C)C)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CC(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@@H]2CCCN2C(=O)[C@@H](Cc2ccccc2)NC1=O",
-        "valid": true,
-        "monomers": [
-          "D-Phe",
-          "L-Pro",
-          "L-Phe",
-          "D-Phe",
-          "L-Asn",
-          "L-Gln",
-          "L-Tyr",
-          "L-Val",
-          "L-Orn",
-          "L-Leu"
-        ],
-        "metadata": {
-          "Cyclisation": "Head-to-tail",
-          "Dimerisation": "Monomer",
-          "Methylation": "No",
-          "Distinctive feature": "Well known",
-          "PubChemCID": "16129635"
-        }
-      },
-      {
-        "id": "p_2",
-        "number": 2,
-        "name": "Gramicidin S",
-        "origin": "known",
-        "peptide": "[[D-Phe-L-Pro-L-Val-L-Orn-L-Leu]]",
-        "smiles": "CC(C)C[C@@H]1NC(=O)[C@H](CCCN)NC(=O)[C@H](C(C)C)NC(=O)[C@@H]2CCCN2C(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCCN)NC(=O)[C@H](C(C)C)NC(=O)[C@@H]2CCCN2C(=O)[C@@H](Cc2ccccc2)NC1=O",
-        "valid": true,
-        "monomers": [
-          "D-Phe",
-          "L-Pro",
-          "L-Val",
-          "L-Orn",
-          "L-Leu"
-        ],
-        "metadata": {
-          "Cyclisation": "Head-to-tail",
-          "Dimerisation": "Dimer",
-          "Methylation": "No",
-          "Distinctive feature": "Well known",
-          "PubChemCID": "73357"
-        }
-      },
-      {
-        "id": "p_3",
-        "number": 3,
-        "name": "Daptomycin",
-        "origin": "known",
-        "peptide": "n-Dec-L-Trp-D-Asn-L-Asp-(L-Thr-Gly-L-Orn-L-Asp-D-Ala-L-Asp-Gly-D-Ser-L-3-Me-Glu-L-Kyn)",
-        "smiles": "CCCCCCCCCC(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@H](CC(N)=O)C(=O)N[C@@H](CC(=O)O)C(=O)N[C@@H]1C(=O)NCC(=O)N[C@@H](CCCN)C(=O)N[C@@H](CC(=O)O)C(=O)N[C@H](C)C(=O)N[C@@H](CC(=O)O)C(=O)NCC(=O)N[C@H](CO)C(=O)N[C@@H]([C@H](C)CC(=O)O)C(=O)N[C@@H](CC(=O)c2ccccc2N)C(=O)O[C@@H]1C",
-        "valid": true,
-        "monomers": [
-          "n-Dec",
-          "L-Trp",
-          "D-Asn",
-          "L-Asp",
-          "L-Thr",
-          "Gly",
-          "L-Orn",
-          "L-Asp",
-          "D-Ala",
-          "L-Asp",
-          "Gly",
-          "D-Ser",
-          "L-3-Me-Glu",
-          "L-Kyn"
-        ],
-        "metadata": {
-          "Cyclisation": "Internal",
-          "Dimerisation": "Monomer",
-          "Methylation": "Yes",
-          "Distinctive feature": "N-decanoyl starter",
-          "PubChemCID": "21585658"
-        }
-      },
-      {
-        "id": "p_4",
-        "number": 4,
-        "name": "Syringolin A",
-        "origin": "known",
-        "peptide": "L-ureidoVal-L-Val-(L-dhLys-L-Val/DH-Mal)",
-        "smiles": "CC(C)[C@H](NC(=O)N[C@H](C(=O)N[C@H]1/C=C/CCNC(=O)/C=C/[C@H](C(C)C)NC1=O)C(C)C)C(=O)O",
-        "valid": true,
-        "monomers": [
-          "L-ureidoVal",
-          "L-Val",
-          "L-dhLys",
-          "L-Val",
-          "DH-Mal"
-        ],
-        "metadata": {
-          "Cyclisation": "Internal",
-          "Dimerisation": "Monomer",
-          "Methylation": "No",
-          "Distinctive feature": "Uriedo-linked valine",
-          "PubChemCID": "42601513"
-        }
-      },
-      {
-        "id": "p_5",
-        "number": 5,
-        "name": "Yersiniabactin",
-        "origin": "known",
-        "peptide": "Sal/L-Thz/L-Thd/di-Me-KR-Mal/L-Me-Thz",
-        "smiles": "CC(C)(C1=N[C@@](C)(C(=O)O)CS1)[C@H](O)[C@@H]1CSC([C@H]2CSC(c3ccccc3O)=N2)N1",
-        "valid": true,
-        "monomers": [
-          "Sal",
-          "L-Thz",
-          "L-Thd",
-          "di-Me-KR-Mal",
-          "L-Me-Thz"
-        ],
-        "metadata": {
-          "Cyclisation": "None",
-          "Dimerisation": "Monomer",
-          "Methylation": "Yes",
-          "Distinctive feature": "Cyclised amino acids / Polyketide",
-          "PubChemCID": "443589"
-        }
-      },
-      {
-        "id": "p_6",
-        "number": 6,
-        "name": "Vancomycin",
-        "origin": "known",
-        "peptide": "D-N-Me-Leu-D-Bht-L-Asn-D-gvHpg-D-Hpg-L-Bht-L-Dpg",
-        "smiles": "CN[C@H](CC(C)C)C(=O)N[C@H]1C(=O)N[C@@H](CC(N)=O)C(=O)N[C@H]2C(=O)N[C@H]3C(=O)N[C@H](C(=O)N[C@H](C(=O)O)c4cc(O)cc(O)c4-c4cc3ccc4O)[C@H](O)c3ccc(c(Cl)c3)Oc3cc2cc(c3O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O[C@H]2C[C@](C)(N)[C@H](O)[C@H](C)O2)Oc2ccc(cc2Cl)[C@H]1O",
-        "valid": true,
-        "monomers": [
-          "D-N-Me-Leu",
-          "D-Bht",
-          "L-Asn",
-          "D-gvHpg",
-          "D-Hpg",
-          "L-Bht",
-          "L-Dpg"
-        ],
-        "metadata": {
-          "Cyclisation": "None",
-          "Dimerisation": "Monomer",
-          "Methylation": "Yes",
-          "Distinctive feature": "Cross-linking / glycosylation",
-          "PubChemCID": "14969"
-        }
-      },
-      {
-        "id": "p_7",
-        "number": 7,
-        "name": "Thiocoraline A",
-        "origin": "known",
-        "peptide": "3HQA-((D-Cys-Gly-L-N-Me-cl-Cys-L-S-Me-N-Me-Cys))",
-        "smiles": "CSC[C@H]1C(=O)SC[C@@H](NC(=O)c2nc3ccccc3cc2O)C(=O)NCC(=O)N(C)[C@H]2CSSC[C@@H](C(=O)N1C)N(C)C(=O)CNC(=O)[C@H](NC(=O)c1nc3ccccc3cc1O)CSC(=O)[C@H](CSC)N(C)C2=O",
-        "valid": true,
-        "monomers": [
-          "3HQA",
-          "D-Cys",
-          "Gly",
-          "L-N-Me-cl-Cys",
-          "L-S-Me-N-Me-Cys"
-        ],
-        "metadata": {
-          "Cyclisation": "Internal",
-          "Dimerisation": "Dimer",
-          "Methylation": "Yes",
-          "Distinctive feature": "Cross-linking",
-          "PubChemCID": "9855014"
-        }
-      },
-      {
-        "id": "p_8",
-        "number": 8,
-        "name": "Cyclosporine A",
-        "origin": "known",
-        "peptide": "[D-Ala-L-N-Me-Leu-L-N-Me-Leu-L-N-Me-Val-L-N-Me-Bmt-L-Abu-N-Me-Gly-L-N-Me-Leu-L-Val-L-N-Me-Leu-L-Ala]",
-        "smiles": "C/C=C/C[C@@H](C)[C@@H](O)[C@H]1C(=O)N[C@@H](CC)C(=O)N(C)CC(=O)N(C)[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@H](C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N(C)[C@@H](C(C)C)C(=O)N1C",
-        "valid": true,
-        "monomers": [
-          "D-Ala",
-          "L-N-Me-Leu",
-          "L-N-Me-Leu",
-          "L-N-Me-Val",
-          "L-N-Me-Bmt",
-          "L-Abu",
-          "N-Me-Gly",
-          "L-N-Me-Leu",
-          "L-Val",
-          "L-N-Me-Leu",
-          "L-Ala"
-        ],
-        "metadata": {
-          "Cyclisation": "Head-to-tail",
-          "Dimerisation": "Monomer",
-          "Methylation": "Yes",
-          "Distinctive feature": "N-methylation",
-          "PubChemCID": "5284373"
-        }
-      },
-      {
-        "id": "p_9",
-        "number": 9,
-        "name": "Plitidepsin",
-        "origin": "known",
-        "peptide": "Pyr-L-Pro-D-N-Me-Leu-(L-Thr-isoSta-Hip-L-Leu-L-Pro-L-N-Me-O-Me-Tyr)",
-        "smiles": "CC[C@H](C)[C@H]1NC(=O)[C@@H](NC(=O)[C@@H](CC(C)C)N(C)C(=O)[C@@H]2CCCN2C(=O)C(C)=O)[C@@H](C)OC(=O)[C@H](Cc2ccc(OC)cc2)N(C)C(=O)[C@@H]2CCCN2C(=O)[C@H](CC(C)C)NC(=O)[C@@H](C)C(=O)[C@H](C(C)C)OC(=O)C[C@@H]1O",
-        "valid": true,
-        "monomers": [
-          "Pyr",
-          "L-Pro",
-          "D-N-Me-Leu",
-          "L-Thr",
-          "isoSta",
-          "Hip",
-          "L-Leu",
-          "L-Pro",
-          "L-N-Me-O-Me-Tyr"
-        ],
-        "metadata": {
-          "Cyclisation": "Internal",
-          "Dimerisation": "Monomer",
-          "Methylation": "Yes",
-          "Distinctive feature": "Beta-hydroxy-gamma-amino acid",
-          "PubChemCID": "9812534"
-        }
-      },
-      {
-        "id": "p_10",
-        "number": 10,
-        "name": "Enterobactin",
-        "origin": "known",
-        "peptide": "DHB-(((L-Ser)))",
-        "smiles": "O=C(N[C@H]1COC(=O)[C@@H](NC(=O)c2cccc(O)c2O)COC(=O)[C@@H](NC(=O)c2cccc(O)c2O)COC1=O)c1cccc(O)c1O",
-        "valid": true,
-        "monomers": [
-          "DHB",
-          "L-Ser"
-        ],
-        "metadata": {
-          "Cyclisation": "Internal",
-          "Dimerisation": "Trimer",
-          "Methylation": "No",
-          "Distinctive feature": "Trimeric",
-          "PubChemCID": "34231"
-        }
-      }
-    ],
-    "edges": [
-      {
-        "id": "e1_2",
-        "source": "p_1",
-        "target": "p_2",
-        "tanimoto_r2": 0.78,
-        "tanimoto_r3": 0.69,
-        "alignment_base_moderate_id": 0.5,
-        "alignment_base_moderate_align": "==11111===",
-        "alignment_base_relaxed_id": 0.5,
-        "alignment_base_relaxed_align": "==11111===",
-        "alignment_exact_moderate_id": 0.5,
-        "alignment_exact_moderate_align": "==11111===",
-        "alignment_exact_relaxed_id": 0.5,
-        "alignment_exact_relaxed_align": "==11111==="
-      },
-      {
-        "id": "e5_7",
-        "source": "p_5",
-        "target": "p_7",
-        "alignment_base_relaxed_id": 0.4,
-        "alignment_base_relaxed_align": "≠=≠≠="
-      }
-    ],
+  "schema": 1,
+  "kind": "input",
+  "savedAt": "2026-11-04T20:08:07.754Z",
+  "input": {
+    "known": "Peptide,Name,Cycliclisation,Dimerisation,Methylation,Distinctive feature, PubChemCID\r\n[D-Phe-L-Pro-L-Phe-D-Phe-L-Asn-L-Gln-L-Tyr-L-Val-L-Orn-L-Leu],Tyrocidine A,Head-to-tail,Monomer,No,Well known,16129635\r\n[[D-Phe-L-Pro-L-Val-L-Orn-L-Leu]],Gramicidin S,Head-to-tail,Dimer,No,Well known,73357\r\nn-Dec-L-Trp-D-Asn-L-Asp-(L-Thr-Gly-L-Orn-L-Asp-D-Ala-L-Asp-Gly-D-Ser-L-3-Me-Glu-L-Kyn),Daptomycin,Internal,Monomer,Yes,N-decanoyl starter,21585658\r\nL-ureidoVal-L-Val-(L-dhLys-L-Val/DH-Mal),Syringolin A,Internal,Monomer,No,Uriedo-linked valine,42601513\r\nSal/L-Thz/L-Thd/di-Me-KR-Mal/L-Me-Thz,Yersiniabactin,None,Monomer,Yes,Cyclised amino acids / Polyketide,443589\r\nD-N-Me-Leu-D-Bht-L-Asn-D-gvHpg-D-Hpg-L-Bht-L-Dpg,Vancomycin,None,Monomer,Yes,Cross-linking / glycosylation,14969\r\n3HQA-((D-Cys-Gly-L-N-Me-cl-Cys-L-S-Me-N-Me-Cys)),Thiocoraline A,Internal,Dimer,Yes,Cross-linking,9855014\r\n[D-Ala-L-N-Me-Leu-L-N-Me-Leu-L-N-Me-Val-L-N-Me-Bmt-L-Abu-N-Me-Gly-L-N-Me-Leu-L-Val-L-N-Me-Leu-L-Ala],Cyclosporine A,Head-to-tail,Monomer,Yes,N-methylation,5284373\r\nPyr-L-Pro-D-N-Me-Leu-(L-Thr-isoSta-Hip-L-Leu-L-Pro-L-N-Me-O-Me-Tyr),Plitidepsin,Internal,Monomer,Yes,Beta-hydroxy-gamma-amino acid,9812534\r\nDHB-(((L-Ser))),Enterobactin,Internal,Trimer,No,Trimeric,34231\r\n",
+    "predicted": "",
     "monomers": {
       "3HQA": {
         "code": "3HQA",
@@ -324,7 +48,6 @@
         "base": "Bht",
         "stereochemistry": "D",
         "name": "beta-hydroxytyrosine",
-        "IUPAC": null,
         "smiles": "[*:1]N[C@H]([C@H](O)C1=CC(Cl)=C(O([*:5]))C=C1)C(=O)[*:2]",
         "category": "Non-proteinogenic",
         "known": "User-defined"
@@ -348,7 +71,6 @@
         "base": "Hpg",
         "stereochemistry": "D",
         "name": "4-hydroxyphenylglycine",
-        "IUPAC": null,
         "smiles": "[*:1]N[C@H](C1=CC([*:6])=C(O)C=C1)C(=O)[*:2]",
         "category": "Non-proteinogenic",
         "known": "User-defined"
@@ -396,7 +118,6 @@
         "base": "Hpg",
         "stereochemistry": "D",
         "name": "Glucose + vancosamine 4-hydroxyphenylglycine",
-        "IUPAC": null,
         "smiles": "[*:1]N[C@H](C1=CC([*:5])=C(O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@@H](O[C@@H]3O[C@@H](C)[C@@H](O)[C@@](C)(N)C3)2)C([*:5])=C1)C(=O)[*:2]",
         "category": "Non-proteinogenic",
         "known": "User-defined"
@@ -452,7 +173,6 @@
         "base": "Glu",
         "stereochemistry": "L",
         "name": "3-Me-Glu",
-        "IUPAC": null,
         "smiles": "[*:1]N[C@@H]([C@H](C)CC(=O)O[*:3])C(=O)[*:2]",
         "category": "Non-proteinogenic",
         "known": "User-defined"
@@ -464,7 +184,6 @@
         "base": "Abu",
         "stereochemistry": "L",
         "name": "Aminobutyric acid",
-        "IUPAC": null,
         "smiles": "[*:1]N[C@@H](CC)C(=O)[*:2]",
         "category": "Proteinogenic",
         "known": "Inbuilt"
@@ -512,7 +231,6 @@
         "base": "Bht",
         "stereochemistry": "L",
         "name": "beta-hydroxytyrosine",
-        "IUPAC": null,
         "smiles": "[*:1]N[C@@H]([C@H](O)C1=CC(Cl)=C(O([*:5]))C=C1)C(=O)[*:2]",
         "category": "Non-proteinogenic",
         "known": "User-defined"
@@ -524,7 +242,6 @@
         "base": "Dpg",
         "stereochemistry": "L",
         "name": "3-5-dihydroxyphenylglycine",
-        "IUPAC": null,
         "smiles": "[*:1]N[C@@H](C1=C([*:6])C(O)=CC(O)=C1)C(=O)[*:2]",
         "category": "Non-proteinogenic",
         "known": "User-defined"
@@ -548,7 +265,6 @@
         "base": "Kyn",
         "stereochemistry": "L",
         "name": "Kynurenine",
-        "IUPAC": null,
         "smiles": "[*:1]N[C@@H](CC(=O)C1=C(N)C=CC=C1)C(=O)[*:2]",
         "category": "Non-proteinogenic",
         "known": "User-defined"
@@ -583,7 +299,6 @@
         "base": "Bmt",
         "stereochemistry": "L",
         "name": "(4R)-4-[(E)-2-butenyl]-4-methyl-l-threonine",
-        "IUPAC": null,
         "smiles": "[*:1]N(C)[C@@H]([C@H](O)[C@H](C)C\\\\C=C\\\\C)C(=O)[*:2]",
         "category": "Non-proteinogenic",
         "known": "User-defined"
@@ -631,7 +346,6 @@
         "base": "Cys",
         "stereochemistry": "L",
         "name": "Cross-linked cysteine",
-        "IUPAC": null,
         "smiles": "[*:1]N(C)[C@@H](CS([*:5]))C(=O)[*:2]",
         "category": "Proteinogenic",
         "known": "User-defined"
@@ -643,7 +357,6 @@
         "base": "Orn",
         "stereochemistry": "L",
         "name": "Ornithine",
-        "IUPAC": null,
         "smiles": "[*:1]N[C@@H](CCCN[*:3])C(=O)[*:2]",
         "category": "Non-proteinogenic",
         "known": "Inbuilt"
@@ -702,7 +415,6 @@
         "base": "Thd",
         "stereochemistry": "L",
         "name": "Thiazolidine",
-        "IUPAC": null,
         "smiles": "[*:1]C1SC[C@H](N1)C(=O)[*:2]",
         "category": "Cyclised proteinogenic",
         "known": "User-defined"
@@ -773,7 +485,6 @@
         "base": "Lys",
         "stereochemistry": "L",
         "name": "3-4-dehydrolysine",
-        "IUPAC": null,
         "smiles": "[*:1]N[C@@H](/C=C/CCN[*:3])C(=O)[*:2]",
         "category": "Non-proteinogenic",
         "known": "User-defined"
@@ -856,52 +567,35 @@
         "category": "Fatty acid",
         "known": "User-defined"
       }
-    },
-    "metadata": {
-      "known": 10,
-      "predicted": 0,
-      "known_order": [
-        "Cyclisation",
-        "Dimerisation",
-        "Methylation",
-        "Distinctive feature",
-        "PubChemCID"
+    }
+  },
+  "settings": {
+    "edge": {
+      "methods": [
+        "monomer"
       ],
-      "predicted_order": []
-    },
-    "warnings": [
-      {
-        "code": 2011,
-        "message": "The user provided a monomer listed as 'Inbuilt' that differs from the inbuilt value. These may be modifications of simpler amino acids. The users version has been used when matching: L-3-Me-Glu, L-ureidoVal, L-dhLys, L-Thz, L-Me-Thz, L-N-Me-cl-Cys",
-        "level": "warning"
-      }
-    ],
-    "settings": {
-      "edge": {
-        "methods": [
-          "monomer",
-          "tanimoto"
+      "monomer": {
+        "match": [
+          "base"
         ],
-        "monomer": {
-          "match": [
-            "base",
-            "exact"
-          ],
-          "stereochemistry": [
-            "moderate",
-            "relaxed"
-          ],
-          "cutoff": 40
-        },
-        "tanimoto": {
-          "radius": [
-            2,
-            3
-          ],
-          "cutoff": 0.45
-        }
+        "stereochemistry": [
+          "relaxed"
+        ],
+        "cutoff": 35
+      },
+      "tanimoto": {
+        "radius": [
+          2
+        ],
+        "cutoff": 0.45
       }
     },
-    "schema": 1
+    "processing": {
+      "length": {
+        "min": 3,
+        "max": 40
+      },
+      "split": "split"
+    }
   }
 }
