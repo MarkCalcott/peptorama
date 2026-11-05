@@ -5,7 +5,15 @@
 Peptorama is an application for creating peptide structures and exploratory data
 analysis. It is a browser-based web app with a Python backend for data processing.
 
-Peptorama is available from https://peptorama.com/
+To learn more see our preprint: https://www.biorxiv.org/content/10.64898/2026.11.03.764117v1
+
+Or try our web application: https://peptorama.com/
+
+## Demo video
+
+Below shows the basic workflow sped up 1.4X for demo purposes.
+
+https://github.com/user-attachments/assets/c01e6759-5162-4720-a0da-f09a39e6dcee
 
 ## Installation
 
@@ -49,7 +57,7 @@ npm run build
 
 Run the app in two terminals as below.
 
-### Terminal 1
+#### Terminal 1
 
 ```bash
 cd backend
@@ -57,7 +65,7 @@ conda activate peptorama
 uvicorn peptorama.main:app --reload
 ```
 
-### Terminal 2
+#### Terminal 2
 
 ```bash
 cd frontend
