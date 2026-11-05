@@ -1,0 +1,66 @@
+
+.alignmentRow {
+    display: flex;
+    gap: var(--space-xs);
+    row-gap: var(--space-md);
+    margin: var(--space-md) 0;
+    flex-wrap: wrap;
+}
+
+.monomerCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.alnCell {
+  font-family: var(--font-mono);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  white-space: nowrap;
+  padding: var(--space-xs);
+  font-size: 0.8rem;
+  min-width: 36px;
+}
+
+.alnMatch {
+  background: var(--green-dim);
+  border-color:var(--green-dim);
+  color:var(--green);
+}
+.alnMismatch {
+  background: var(--amber-dim);
+  border-color: var(--amber-dim);
+  color: var(--amber);
+}
+.alnSingleResidue {
+  background: var(--bg-active);
+  border-color: var(--border-dim);
+}
+.alnGap {
+  background: var(--bg-input);
+  color: var(--text-dim);
+}
+.known {
+  width: 21px;
+  height: 21px;
+  border-radius: var(--radius-lg);
+  background: var(--cyan);
+  margin-right: var(--space-sm);
+}
+.predicted {
+  width: 21px;
+  height: 21px;
+  border-radius: var(--radius-sm);
+  background: var(--green);
+  margin-right: var(--space-sm);
+}
+.rowHeader {
+  display: flex;
+  margin-right: var(--space-sm);
+}
+.tanimoto {
+  display: flex;
+  padding: 0 var(--space-md);
+  gap: var(--space-sm);
+}

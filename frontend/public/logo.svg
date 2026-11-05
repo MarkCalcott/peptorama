@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="38.656136mm"
+   height="36.614719mm"
+   viewBox="0 0 38.656136 36.614719"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient3744">
+      <stop
+         style="stop-color:#700000;stop-opacity:1;"
+         offset="0"
+         id="stop3746" />
+      <stop
+         id="stop3790"
+         offset="0.09731334"
+         style="stop-color:#aa0000;stop-opacity:1;" />
+      <stop
+         style="stop-color:#aa0000;stop-opacity:1;"
+         offset="0.8870402"
+         id="stop3792" />
+      <stop
+         style="stop-color:#700000;stop-opacity:1;"
+         offset="1"
+         id="stop3748" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2956">
+      <stop
+         style="stop-color:#bbbbbb;stop-opacity:1;"
+         offset="0"
+         id="stop2958" />
+      <stop
+         style="stop-color:#eeeeee;stop-opacity:1;"
+         offset="1"
+         id="stop2960" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient3744-9"
+       id="linearGradient3750-1"
+       x1="21.666666"
+       y1="333.33334"
+       x2="140"
+       y2="327.98871"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient3744-9">
+      <stop
+         style="stop-color:#700000;stop-opacity:1;"
+         offset="0"
+         id="stop3746-1" />
+      <stop
+         style="stop-color:#aa0000;stop-opacity:1;"
+         offset="1"
+         id="stop3748-2" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-58.126475,-57.551747)">
+    <ellipse
+       style="fill:#53ffff;stroke:#000000;stroke-width:0.721277;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+       id="path996"
+       cx="77.454544"
+       cy="75.859108"
+       rx="18.96743"
+       ry="17.946722" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="63.983627"
+       y="70.137306"
+       id="text2490"><tspan
+         id="tspan2488"
+         style="stroke-width:0.264583"
+         x="63.983627"
+         y="70.137306">O</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="76.494202"
+       y="90.7472"
+       id="text4594"><tspan
+         id="tspan4592"
+         style="stroke-width:0.264583"
+         x="76.494202"
+         y="90.7472">N</tspan></text>
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.824796;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5199"
+       width="11.662326"
+       height="0.83608031"
+       x="30.797634"
+       y="132.20346" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.663882;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5199-6"
+       width="7.5556779"
+       height="0.83608031"
+       x="-79.596542"
+       y="66.310638"
+       transform="rotate(-90)" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.663882;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5199-6-2"
+       width="7.5556779"
+       height="0.83608031"
+       x="-79.565422"
+       y="69.226479"
+       transform="rotate(-90)" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:1.42301;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5199-6-2-2"
+       width="7.1085"
+       height="4.0830173"
+       x="-28.093924"
+       y="105.18084"
+       transform="matrix(0.64831335,-0.76137363,0.7286505,0.68488572,0,0)" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.663882;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5199-6-2-2-9"
+       width="7.5556779"
+       height="0.83608031"
+       x="-79.596542"
+       y="90.992905"
+       transform="rotate(-90)" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.663882;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5199-6-2-0"
+       width="7.5556779"
+       height="0.83608031"
+       x="-110.56623"
+       y="-22.622747"
+       transform="rotate(-143.41156)" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:1.088;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5199-6-2-0-6"
+       width="4.3684373"
+       height="0.49232876"
+       x="-125.06417"
+       y="-6.0438495"
+       transform="matrix(-0.78433356,-0.62033932,0.57168454,-0.82047351,0,0)" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.663882;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5199-6-2-0-8"
+       width="7.5556779"
+       height="0.83608031"
+       x="-1.0855864"
+       y="-103.93474"
+       transform="matrix(0.80293775,-0.59606289,-0.59606289,-0.80293775,0,0)" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.663882;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5199-6-2-0-8-5"
+       width="7.5556779"
+       height="0.83608031"
+       x="18.732735"
+       y="-118.64692"
+       transform="matrix(0.80293775,-0.59606289,-0.59606289,-0.80293775,0,0)" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.865549;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5199-6-2-0-8-5-5"
+       width="4.4638329"
+       height="0.52045918"
+       x="40.093697"
+       y="-116.5897"
+       transform="matrix(0.746644,-0.66522383,-0.52604109,-0.85045916,0,0)" />
+  </g>
+</svg>

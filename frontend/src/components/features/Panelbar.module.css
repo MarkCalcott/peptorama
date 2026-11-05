@@ -1,0 +1,22 @@
+
+.panelbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: var(--space-md);
+    background: var(--bg-bar);
+    border-bottom: solid 1px var(--border-dim);
+    gap: 0 calc(var(--space-lg)*2);
+}
+
+.panelbarButtons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+    gap: var(--space-xs);
+}

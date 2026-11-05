@@ -1,0 +1,844 @@
+{
+  "kind": "network",
+  "savedAt": "2026-10-18T23:47:07.525Z",
+  "data": {
+    "peptides": [
+      {
+        "id": "p_1",
+        "number": 1,
+        "name": "Friulimicin",
+        "origin": "known",
+        "peptide": "L-Asn-L-Me-Dap-D-Pip-L-Me-Asp-L-Asp-Gly-L-Asp-Gly-D-Me-Dap-L-Val-L-Pro",
+        "smiles": "CC(C)[C@H](NC(=O)[C@H](NC(=O)CNC(=O)[C@H](CC(=O)O)NC(=O)CNC(=O)[C@H](CC(=O)O)NC(=O)[C@@H](NC(=O)[C@H]1CCCCN1C(=O)[C@@H](NC(=O)[C@@H](N)CC(N)=O)C(C)N)[C@H](C)C(=O)O)C(C)N)C(=O)N1CCC[C@H]1C(=O)O",
+        "valid": true,
+        "monomers": [
+          "L-Asn",
+          "L-Me-Dap",
+          "D-Pip",
+          "L-Me-Asp",
+          "L-Asp",
+          "Gly",
+          "L-Asp",
+          "Gly",
+          "D-Me-Dap",
+          "L-Val",
+          "L-Pro"
+        ],
+        "metadata": {
+          "Type": "CDA"
+        }
+      },
+      {
+        "id": "p_2",
+        "number": 2,
+        "name": "Laspartomycin",
+        "origin": "known",
+        "peptide": "L-Asp-L-Dap-D-Pip-Gly-L-Asp-Gly-L-Asp-Gly-D-Thr-L-Ile-L-Pro",
+        "smiles": "CC[C@@H](C)[C@H](NC(=O)[C@H](NC(=O)CNC(=O)[C@H](CC(=O)O)NC(=O)CNC(=O)[C@H](CC(=O)O)NC(=O)CNC(=O)[C@H]1CCCCN1C(=O)[C@H](CN)NC(=O)[C@@H](N)CC(=O)O)[C@@H](C)O)C(=O)N1CCC[C@H]1C(=O)O",
+        "valid": true,
+        "monomers": [
+          "L-Asp",
+          "L-Dap",
+          "D-Pip",
+          "Gly",
+          "L-Asp",
+          "Gly",
+          "L-Asp",
+          "Gly",
+          "D-Thr",
+          "L-Ile",
+          "L-Pro"
+        ],
+        "metadata": {
+          "Type": "CDA"
+        }
+      },
+      {
+        "id": "p_3",
+        "number": 3,
+        "name": "Daptomycin",
+        "origin": "known",
+        "peptide": "L-Trp-D-Asn-L-Asp-L-Thr-Gly-L-Orn-L-Asp-D-Ala-L-Asp-Gly-D-Ser-L-Me-Glu-L-Kyn",
+        "smiles": "CC(CC(=O)O)[C@H](NC(=O)[C@@H](CO)NC(=O)CNC(=O)[C@H](CC(=O)O)NC(=O)[C@@H](C)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](CCCN)NC(=O)CNC(=O)[C@@H](NC(=O)[C@H](CC(=O)O)NC(=O)[C@@H](CC(N)=O)NC(=O)[C@@H](N)Cc1c[nH]c2ccccc12)[C@@H](C)O)C(=O)N[C@@H](CC(=O)c1ccccc1N)C(=O)O",
+        "valid": true,
+        "monomers": [
+          "L-Trp",
+          "D-Asn",
+          "L-Asp",
+          "L-Thr",
+          "Gly",
+          "L-Orn",
+          "L-Asp",
+          "D-Ala",
+          "L-Asp",
+          "Gly",
+          "D-Ser",
+          "L-Me-Glu",
+          "L-Kyn"
+        ],
+        "metadata": {
+          "Type": "CDA"
+        }
+      },
+      {
+        "id": "p_4",
+        "number": 4,
+        "name": "A54145",
+        "origin": "known",
+        "peptide": "L-Trp-D-Glu-L-OH-Asn-L-Thr-L-N-Me-Gly-L-Ala-L-Asp-D-Lys-L-Me-Asp-Gly-D-Asn-L-Me-Glu-Trp",
+        "smiles": "CC(CC(=O)O)[C@H](NC(=O)[C@@H](CC(N)=O)NC(=O)CNC(=O)[C@@H](NC(=O)[C@@H](CCCCN)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](C)NC(=O)[CH]N(C)C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](CCC(=O)O)NC(=O)[C@@H](N)Cc1c[nH]c2ccccc12)[C@H](O)C(N)=O)[C@@H](C)O)[C@H](C)C(=O)O)C(=O)NC(Cc1c[nH]c2ccccc12)C(=O)O",
+        "valid": true,
+        "monomers": [
+          "L-Trp",
+          "D-Glu",
+          "L-OH-Asn",
+          "L-Thr",
+          "L-N-Me-Gly",
+          "L-Ala",
+          "L-Asp",
+          "D-Lys",
+          "L-Me-Asp",
+          "Gly",
+          "D-Asn",
+          "L-Me-Glu",
+          "Trp"
+        ],
+        "metadata": {
+          "Type": "CDA"
+        }
+      },
+      {
+        "id": "p_5",
+        "number": 5,
+        "name": "S. coelicolor",
+        "origin": "known",
+        "peptide": "L-Ser-L-Thr-D-Trp-L-Asp-L-Asp-D-Hpg-L-Asp-Gly-D-Asn-L-Me-Glu-L-Trp",
+        "smiles": "CC(CC(=O)O)[C@H](NC(=O)[C@@H](CC(N)=O)NC(=O)CNC(=O)[C@H](CC(=O)O)NC(=O)C(NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](CC(=O)O)NC(=O)[C@@H](Cc1c[nH]c2ccccc12)NC(=O)[C@@H](NC(=O)[C@@H](N)CO)[C@@H](C)O)c1ccc(O)cc1)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
+        "valid": true,
+        "monomers": [
+          "L-Ser",
+          "L-Thr",
+          "D-Trp",
+          "L-Asp",
+          "L-Asp",
+          "D-Hpg",
+          "L-Asp",
+          "Gly",
+          "D-Asn",
+          "L-Me-Glu",
+          "L-Trp"
+        ],
+        "metadata": {
+          "Type": "CDA"
+        }
+      },
+      {
+        "id": "p_6",
+        "number": 6,
+        "name": "Tyrocidine",
+        "origin": "known",
+        "peptide": "D-Phe-L-Pro-L-Phe-D-Phe-L-Asn-L-Gln-L-Tyr-L-Val-L-Orn-L-Leu",
+        "smiles": "CC(C)C[C@H](NC(=O)[C@H](CCCN)NC(=O)[C@@H](NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CC(N)=O)NC(=O)[C@@H](Cc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H]1CCCN1C(=O)[C@H](N)Cc1ccccc1)C(C)C)C(=O)O",
+        "valid": true,
+        "monomers": [
+          "D-Phe",
+          "L-Pro",
+          "L-Phe",
+          "D-Phe",
+          "L-Asn",
+          "L-Gln",
+          "L-Tyr",
+          "L-Val",
+          "L-Orn",
+          "L-Leu"
+        ],
+        "metadata": {
+          "Type": "Non-CDA"
+        }
+      },
+      {
+        "id": "p_7",
+        "number": 7,
+        "name": "Gramicidin S",
+        "origin": "known",
+        "peptide": "D-Phe-L-Pro-L-Val-L-Orn-L-Leu",
+        "smiles": "CC(C)C[C@H](NC(=O)[C@H](CCCN)NC(=O)[C@@H](NC(=O)[C@@H]1CCCN1C(=O)[C@H](N)Cc1ccccc1)C(C)C)C(=O)O",
+        "valid": true,
+        "monomers": [
+          "D-Phe",
+          "L-Pro",
+          "L-Val",
+          "L-Orn",
+          "L-Leu"
+        ],
+        "metadata": {
+          "Type": "Non-CDA"
+        }
+      },
+      {
+        "id": "p_8",
+        "number": 8,
+        "name": "Malacidin",
+        "origin": "predicted",
+        "peptide": "L-Me-Asp-L-Me-Dap-D-Val-L-Lys-L-OH-Asp-L-Asp-Gly-D-Me-Asp-L-Val-L-Me-Pro",
+        "smiles": "CC1C[C@@H](C(=O)O)N(C(=O)[C@@H](NC(=O)[C@H](NC(=O)CNC(=O)[C@H](CC(=O)O)NC(=O)[C@@H](NC(=O)[C@H](CCCCN)NC(=O)[C@H](NC(=O)[C@@H](NC(=O)[C@@H](N)[C@H](C)C(=O)O)C(C)N)C(C)C)[C@H](O)C(=O)O)[C@H](C)C(=O)O)C(C)C)C1",
+        "valid": true,
+        "monomers": [
+          "L-Me-Asp",
+          "L-Me-Dap",
+          "D-Val",
+          "L-Lys",
+          "L-OH-Asp",
+          "L-Asp",
+          "Gly",
+          "D-Me-Asp",
+          "L-Val",
+          "L-Me-Pro"
+        ],
+        "metadata": {
+          "Type": "unknown"
+        }
+      },
+      {
+        "id": "p_9",
+        "number": 9,
+        "name": "Discomycin",
+        "origin": "predicted",
+        "peptide": "L-Ser-L-Thr-D-OH-Phe-L-Asp-L-Asp-D-Hpg-L-Asp-Gly-D-Asn-L-Glu-L-Val",
+        "smiles": "CC(C)[C@H](NC(=O)[C@H](CCC(=O)O)NC(=O)[C@@H](CC(N)=O)NC(=O)CNC(=O)[C@H](CC(=O)O)NC(=O)C(NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](NC(=O)[C@@H](NC(=O)[C@@H](N)CO)[C@@H](C)O)C(O)c1ccccc1)c1ccc(O)cc1)C(=O)O",
+        "valid": true,
+        "monomers": [
+          "L-Ser",
+          "L-Thr",
+          "D-OH-Phe",
+          "L-Asp",
+          "L-Asp",
+          "D-Hpg",
+          "L-Asp",
+          "Gly",
+          "D-Asn",
+          "L-Glu",
+          "L-Val"
+        ],
+        "metadata": {
+          "Type": "unknown"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1_2",
+        "source": "p_1",
+        "target": "p_2",
+        "alignment_base_relaxed_id": 0.64,
+        "alignment_base_relaxed_align": "≠==≠====≠≠="
+      },
+      {
+        "id": "e1_5",
+        "source": "p_1",
+        "target": "p_5",
+        "alignment_base_relaxed_id": 0.36,
+        "alignment_base_relaxed_align": "≠≠≠==≠==≠≠≠"
+      },
+      {
+        "id": "e1_8",
+        "source": "p_1",
+        "target": "p_8",
+        "alignment_base_relaxed_id": 0.58,
+        "alignment_base_relaxed_align": "≠=2≠====11=="
+      },
+      {
+        "id": "e1_9",
+        "source": "p_1",
+        "target": "p_9",
+        "alignment_base_relaxed_id": 0.42,
+        "alignment_base_relaxed_align": "≠≠≠==≠==2≠=1"
+      },
+      {
+        "id": "e2_3",
+        "source": "p_2",
+        "target": "p_3",
+        "alignment_base_relaxed_id": 0.36,
+        "alignment_base_relaxed_align": "22=1≠=2=≠==≠≠≠"
+      },
+      {
+        "id": "e2_8",
+        "source": "p_2",
+        "target": "p_8",
+        "alignment_base_relaxed_id": 0.55,
+        "alignment_base_relaxed_align": "==≠≠=1==≠≠="
+      },
+      {
+        "id": "e3_4",
+        "source": "p_3",
+        "target": "p_4",
+        "alignment_base_relaxed_id": 0.57,
+        "alignment_base_relaxed_align": "=2=1==≠=≠==≠=≠"
+      },
+      {
+        "id": "e3_5",
+        "source": "p_3",
+        "target": "p_5",
+        "alignment_base_relaxed_id": 0.38,
+        "alignment_base_relaxed_align": "11≠=≠≠=≠==≠=≠"
+      },
+      {
+        "id": "e3_9",
+        "source": "p_3",
+        "target": "p_9",
+        "alignment_base_relaxed_id": 0.38,
+        "alignment_base_relaxed_align": "11≠=≠≠=≠==≠=≠"
+      },
+      {
+        "id": "e4_5",
+        "source": "p_4",
+        "target": "p_5",
+        "alignment_base_relaxed_id": 0.54,
+        "alignment_base_relaxed_align": "11≠=≠≠=≠====="
+      },
+      {
+        "id": "e4_9",
+        "source": "p_4",
+        "target": "p_9",
+        "alignment_base_relaxed_id": 0.46,
+        "alignment_base_relaxed_align": "11≠=≠≠=≠====≠"
+      },
+      {
+        "id": "e5_9",
+        "source": "p_5",
+        "target": "p_9",
+        "alignment_base_relaxed_id": 0.82,
+        "alignment_base_relaxed_align": "==≠=======≠"
+      },
+      {
+        "id": "e6_7",
+        "source": "p_6",
+        "target": "p_7",
+        "alignment_base_relaxed_id": 0.5,
+        "alignment_base_relaxed_align": "==11111==="
+      }
+    ],
+    "monomers": {
+      "D-Ala": {
+        "code": "D-Ala",
+        "count": 1,
+        "exact": "Ala",
+        "base": "Ala",
+        "stereochemistry": "D",
+        "name": "Alanine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@H](C)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "D-Asn": {
+        "code": "D-Asn",
+        "count": 4,
+        "exact": "Asn",
+        "base": "Asn",
+        "stereochemistry": "D",
+        "name": "Asparagine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@H](CC(=O)N)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "D-Glu": {
+        "code": "D-Glu",
+        "count": 1,
+        "exact": "Glu",
+        "base": "Glu",
+        "stereochemistry": "D",
+        "name": "Glutamic acid",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@H](CCC(=O)O[*:3])C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "D-Hpg": {
+        "code": "D-Hpg",
+        "count": 2,
+        "exact": "Hpg",
+        "base": "Hpg",
+        "stereochemistry": "flat",
+        "name": "4-hydroxyphenylglycine",
+        "smiles": "[*:1]NC(C1=CC=C(O)C=C1)C(=O)[*:2]",
+        "category": "Non-proteinogenic",
+        "known": "Inbuilt"
+      },
+      "D-Lys": {
+        "code": "D-Lys",
+        "count": 1,
+        "exact": "Lys",
+        "base": "Lys",
+        "stereochemistry": "D",
+        "name": "Lysine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@H](CCCCN[*:3])C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "D-Me-Asp": {
+        "code": "D-Me-Asp",
+        "count": 1,
+        "exact": "Me-Asp",
+        "base": "Asp",
+        "stereochemistry": "D",
+        "name": "Methyl aspartic acid",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@H]([C@H](C)C(=O)O[*:3])C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "D-Me-Dap": {
+        "code": "D-Me-Dap",
+        "count": 1,
+        "exact": "Me-Dap",
+        "base": "Dap",
+        "stereochemistry": "D",
+        "name": "3-methyl-2,3-diaminopropionic acid",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@H](C(C)N[*:3])C(=O)[*:2]",
+        "category": "Non-proteinogenic",
+        "known": "Inbuilt"
+      },
+      "D-OH-Phe": {
+        "code": "D-OH-Phe",
+        "count": 1,
+        "exact": "OH-Phe",
+        "base": "Phe",
+        "stereochemistry": "D",
+        "name": "Hydroxy phenylalanine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@H](C(O)c1ccccc1)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "D-Phe": {
+        "code": "D-Phe",
+        "count": 3,
+        "exact": "Phe",
+        "base": "Phe",
+        "stereochemistry": "D",
+        "name": "Phenylalanine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@H](Cc1ccccc1)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "D-Pip": {
+        "code": "D-Pip",
+        "count": 2,
+        "exact": "Pip",
+        "base": "Pip",
+        "stereochemistry": "D",
+        "name": "Pipecolic acid",
+        "smiles": "[*:1]N1CCCC[C@@H]1C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "D-Ser": {
+        "code": "D-Ser",
+        "count": 1,
+        "exact": "Ser",
+        "base": "Ser",
+        "stereochemistry": "D",
+        "name": "Serine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@H](CO[*:3])C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "D-Thr": {
+        "code": "D-Thr",
+        "count": 1,
+        "exact": "Thr",
+        "base": "Thr",
+        "stereochemistry": "D",
+        "name": "Threonine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@H]([C@H](O[*:3])C)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "D-Trp": {
+        "code": "D-Trp",
+        "count": 1,
+        "exact": "Trp",
+        "base": "Trp",
+        "stereochemistry": "D",
+        "name": "Tryptophan",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@H](Cc1c[nH]c2ccccc12)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "D-Val": {
+        "code": "D-Val",
+        "count": 1,
+        "exact": "Val",
+        "base": "Val",
+        "stereochemistry": "D",
+        "name": "Valine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@H](C(C)C)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "Gly": {
+        "code": "Gly",
+        "count": 11,
+        "exact": "Gly",
+        "base": "Gly",
+        "stereochemistry": "flat",
+        "name": "Glycine",
+        "smiles": "[*:1]NCC(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Ala": {
+        "code": "L-Ala",
+        "count": 1,
+        "exact": "Ala",
+        "base": "Ala",
+        "stereochemistry": "L",
+        "name": "Alanine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](C)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Asn": {
+        "code": "L-Asn",
+        "count": 2,
+        "exact": "Asn",
+        "base": "Asn",
+        "stereochemistry": "L",
+        "name": "Asparagine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](CC(=O)N)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Asp": {
+        "code": "L-Asp",
+        "count": 16,
+        "exact": "Asp",
+        "base": "Asp",
+        "stereochemistry": "L",
+        "name": "Aspartic acid",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](CC(=O)O[*:3])C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Dap": {
+        "code": "L-Dap",
+        "count": 1,
+        "exact": "Dap",
+        "base": "Dap",
+        "stereochemistry": "L",
+        "name": "3-methyl-2,3-diaminopropionic acid",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](CN[*:3])C(=O)[*:2]",
+        "category": "Non-proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Gln": {
+        "code": "L-Gln",
+        "count": 1,
+        "exact": "Gln",
+        "base": "Gln",
+        "stereochemistry": "L",
+        "name": "Glutamine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](CCC(=O)N)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Glu": {
+        "code": "L-Glu",
+        "count": 1,
+        "exact": "Glu",
+        "base": "Glu",
+        "stereochemistry": "L",
+        "name": "Glutamic acid",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](CCC(=O)O[*:3])C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Ile": {
+        "code": "L-Ile",
+        "count": 1,
+        "exact": "Ile",
+        "base": "Ile",
+        "stereochemistry": "L",
+        "name": "Isoleucine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H]([C@@H](CC)C)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Kyn": {
+        "code": "L-Kyn",
+        "count": 1,
+        "exact": "Kyn",
+        "base": "Kyn",
+        "stereochemistry": "L",
+        "name": "Kynurenine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](CC(=O)C1C(N)=CC=CC=1)C(=O)[*:2]",
+        "category": "Polyketide",
+        "known": "Inbuilt"
+      },
+      "L-Leu": {
+        "code": "L-Leu",
+        "count": 2,
+        "exact": "Leu",
+        "base": "Leu",
+        "stereochemistry": "L",
+        "name": "Leucine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](CC(C)C)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Lys": {
+        "code": "L-Lys",
+        "count": 1,
+        "exact": "Lys",
+        "base": "Lys",
+        "stereochemistry": "L",
+        "name": "Lysine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](CCCCN[*:3])C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Me-Asp": {
+        "code": "L-Me-Asp",
+        "count": 3,
+        "exact": "Me-Asp",
+        "base": "Asp",
+        "stereochemistry": "L",
+        "name": "Methyl aspartic acid",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H]([C@H](C)C(=O)O[*:3])C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Me-Dap": {
+        "code": "L-Me-Dap",
+        "count": 2,
+        "exact": "Me-Dap",
+        "base": "Dap",
+        "stereochemistry": "L",
+        "name": "3-methyl-2,3-diaminopropionic acid",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](C(C)N[*:3])C(=O)[*:2]",
+        "category": "Non-proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Me-Glu": {
+        "code": "L-Me-Glu",
+        "count": 3,
+        "exact": "Me-Glu",
+        "base": "Glu",
+        "stereochemistry": "L",
+        "name": "Methyl glutamic acid",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](C(C)CC(=O)O[*:3])C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Me-Pro": {
+        "code": "L-Me-Pro",
+        "count": 1,
+        "exact": "Me-Pro",
+        "base": "Pro",
+        "stereochemistry": "L",
+        "name": "Methyl proline",
+        "smiles": "[*:1]N1CC(C)C[C@H]1C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-N-Me-Gly": {
+        "code": "L-N-Me-Gly",
+        "count": 1,
+        "exact": "N-Me-Gly",
+        "base": "Gly",
+        "stereochemistry": "L",
+        "name": "Glycine",
+        "IUPAC": null,
+        "smiles": "[*:1]N(C)[C@@H]C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-OH-Asn": {
+        "code": "L-OH-Asn",
+        "count": 1,
+        "exact": "OH-Asn",
+        "base": "Asn",
+        "stereochemistry": "L",
+        "name": "Hydroxy asparagine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H]([C@H](O)C(=O)N)C(=O)[*:2]",
+        "category": "Non-proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-OH-Asp": {
+        "code": "L-OH-Asp",
+        "count": 1,
+        "exact": "OH-Asp",
+        "base": "Asp",
+        "stereochemistry": "L",
+        "name": "Hydroxy aspartic acid",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H]([C@H](O)C(=O)O[*:3])C(=O)[*:2]",
+        "category": "Non-proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Orn": {
+        "code": "L-Orn",
+        "count": 3,
+        "exact": "Orn",
+        "base": "Orn",
+        "stereochemistry": "L",
+        "name": "Ornithine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](CCCN[*:3])C(=O)[*:2]",
+        "category": "Non-proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Phe": {
+        "code": "L-Phe",
+        "count": 1,
+        "exact": "Phe",
+        "base": "Phe",
+        "stereochemistry": "L",
+        "name": "Phenylalanine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](Cc1ccccc1)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Pro": {
+        "code": "L-Pro",
+        "count": 4,
+        "exact": "Pro",
+        "base": "Pro",
+        "stereochemistry": "L",
+        "name": "Proline",
+        "smiles": "[*:1]N1CCC[C@H]1C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Ser": {
+        "code": "L-Ser",
+        "count": 2,
+        "exact": "Ser",
+        "base": "Ser",
+        "stereochemistry": "L",
+        "name": "Serine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](CO[*:3])C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Thr": {
+        "code": "L-Thr",
+        "count": 4,
+        "exact": "Thr",
+        "base": "Thr",
+        "stereochemistry": "L",
+        "name": "Threonine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H]([C@H](O[*:3])C)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Trp": {
+        "code": "L-Trp",
+        "count": 3,
+        "exact": "Trp",
+        "base": "Trp",
+        "stereochemistry": "L",
+        "name": "Tryptophan",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](Cc1c[nH]c2ccccc12)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Tyr": {
+        "code": "L-Tyr",
+        "count": 1,
+        "exact": "Tyr",
+        "base": "Tyr",
+        "stereochemistry": "L",
+        "name": "Tyrosine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](Cc1ccc(O[*:3])cc1)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "L-Val": {
+        "code": "L-Val",
+        "count": 5,
+        "exact": "Val",
+        "base": "Val",
+        "stereochemistry": "L",
+        "name": "Valine",
+        "IUPAC": null,
+        "smiles": "[*:1]N[C@@H](C(C)C)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      },
+      "Trp": {
+        "code": "Trp",
+        "count": 1,
+        "exact": "Trp",
+        "base": "Trp",
+        "stereochemistry": "flat",
+        "name": "Tryptophan",
+        "smiles": "[*:1]NC(Cc1c[nH]c2ccccc12)C(=O)[*:2]",
+        "category": "Proteinogenic",
+        "known": "Inbuilt"
+      }
+    },
+    "metadata": {
+      "known": 7,
+      "predicted": 2,
+      "known_order": [
+        "Type"
+      ],
+      "predicted_order": [
+        "Type"
+      ]
+    },
+    "warnings": [],
+    "settings": {
+      "edge": {
+        "methods": [
+          "monomer"
+        ],
+        "monomer": {
+          "match": [
+            "base"
+          ],
+          "stereochemistry": [
+            "relaxed"
+          ],
+          "cutoff": 35
+        },
+        "tanimoto": {
+          "radius": [
+            2
+          ],
+          "cutoff": 0.45
+        }
+      }
+    },
+    "schema": 1
+  }
+}

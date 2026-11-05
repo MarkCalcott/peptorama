@@ -1,0 +1,11 @@
+name: peptorama
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - rdkit
+  - pytest
+  - pytest-cov
+  - pip
+  - pip:
+    - -e .

@@ -1,0 +1,24 @@
+.resultsList {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.searchResult {
+    margin: var(--space-xs);
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    padding: var(--space-xs);
+    cursor: pointer;
+    background: var(--bg-input)
+}
+.searchResult:hover {
+    background: var(--bg-hover)
+}
+
+.legendSwatch {
+  width: 11px;
+  height: 11px;
+  border-radius: var(--radius-lg);
+  flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.1)
+}

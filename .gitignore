@@ -1,0 +1,16 @@
+# Frontend
+frontend/node_modules/
+frontend/build/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*$py.class
+
+# Distribution / packaging
+.Python
+*.egg-info/
+
+# Unit test / coverage reports
+.pytest_cache/
+.coverage

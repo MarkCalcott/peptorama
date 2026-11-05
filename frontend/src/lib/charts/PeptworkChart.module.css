@@ -1,0 +1,65 @@
+.peptworkChart { 
+  background: var(--bg-input);
+  width: 100%; 
+  min-width: 0; 
+  border-radius: var(--radius-lg);
+  padding: var(--space-xs) var(--space-md);
+  overflow-x: scroll;
+  margin: var(--space-md) 0;
+}
+.chartToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chartCanvasWrap {
+  aspect-ratio: 2.8;
+  min-height: 140px;
+  max-height: 70vh;
+}
+.whiteBg {
+  background-color: white;
+}
+.switchLabel {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}
+.switch {
+  position: relative;
+  width: 32px;
+  height: 18px;
+  cursor: pointer;
+}
+.switch input { 
+  opacity: 0; 
+  width: 0; 
+  height: 0; 
+}
+.switch .slider {
+  position: absolute;
+  inset: 0;
+  background: var(--bg-hover);
+  border: 1px solid var(--border-dim);
+  border-radius: var(--radius-md);
+  transition: all 0.2s;
+}
+.switch .slider::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 2px;
+  top: 2px;
+  background: var(--text-dim);
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+.switch input:checked + .slider {
+  background: var(--bg-active);
+  border-color: var(--border-active);
+}
+.switch input:checked + .slider::before {
+  transform: translateX(14px);
+  background: var(--cyan);
+}

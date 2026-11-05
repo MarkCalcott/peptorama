@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # This project uses Vite; skip the Next.js plugin enabled in site settings.
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"

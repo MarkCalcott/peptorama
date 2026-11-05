@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "kind": "input",
+  "savedAt": "2026-11-04T20:15:06.353Z",
+  "input": {
+    "known": "Peptide,Name,Type\r\nL-Asn-L-Me-Dap-D-Pip-L-Me-Asp-L-Asp-Gly-L-Asp-Gly-D-Me-Dap-L-Val-L-Pro,Friulimicin,CDA\r\nL-Asp-L-Dap-D-Pip-Gly-L-Asp-Gly-L-Asp-Gly-D-Thr-L-Ile-L-Pro,Laspartomycin,CDA\r\nL-Trp-D-Asn-L-Asp-L-Thr-Gly-L-Orn-L-Asp-D-Ala-L-Asp-Gly-D-Ser-L-Me-Glu-L-Kyn,Daptomycin,CDA\r\nL-Trp-D-Glu-L-OH-Asn-L-Thr-L-N-Me-Gly-L-Ala-L-Asp-D-Lys-L-Me-Asp-Gly-D-Asn-L-Me-Glu-Trp,A54145,CDA\r\nL-Ser-L-Thr-D-Trp-L-Asp-L-Asp-D-Hpg-L-Asp-Gly-D-Asn-L-Me-Glu-L-Trp,S. coelicolor,CDA\r\nD-Phe-L-Pro-L-Phe-D-Phe-L-Asn-L-Gln-L-Tyr-L-Val-L-Orn-L-Leu,Tyrocidine,Non-CDA\r\nD-Phe-L-Pro-L-Val-L-Orn-L-Leu,Gramicidin S,Non-CDA\r\n",
+    "predicted": "Peptide,Name,Type\r\nL-Me-Asp-L-Me-Dap-D-Val-L-Lys-L-OH-Asp-L-Asp-Gly-D-Me-Asp-L-Val-L-Me-Pro,Malacidin,unknown\r\nL-Ser-L-Thr-D-OH-Phe-L-Asp-L-Asp-D-Hpg-L-Asp-Gly-D-Asn-L-Glu-L-Val,Discomycin,unknown\r\n",
+    "monomers": null
+  },
+  "settings": {
+    "edge": {
+      "methods": [
+        "monomer"
+      ],
+      "monomer": {
+        "match": [
+          "base"
+        ],
+        "stereochemistry": [
+          "relaxed"
+        ],
+        "cutoff": 40
+      },
+      "tanimoto": {
+        "radius": [
+          2
+        ],
+        "cutoff": 0.45
+      }
+    },
+    "processing": {
+      "length": {
+        "min": 3,
+        "max": 40
+      },
+      "split": "split"
+    }
+  }
+}

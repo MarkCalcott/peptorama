@@ -1,0 +1,98 @@
+.legendControls {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-sm)
+}
+
+.toolbarLegend {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+}
+
+.legendItem {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: 0 var(--space-xs);
+    border-radius: var(--radius-md);
+}
+
+.legendItem:hover {
+    background: var(--border-hover);
+    border-color: var(--bg-hover);
+    cursor: pointer;
+}
+
+.legendSwatch {
+    transform: translateY(-1px);
+    width: 10px;
+    height: 10px;
+    border-radius: var(--radius-sm);
+}
+
+.disabled {
+    opacity: 50%;
+    text-decoration: line-through;
+}
+.swatchCyan {
+    background: var(--cyan);
+}
+.swatchAmber {
+    background: var(--amber);
+}
+.swatchRed {
+    background: var(--red);
+}
+.swatchTeal {
+    background: var(--teal);
+}
+.swatchGrey {
+    background: var(--text-secondary);
+}
+.knownBadge {
+    margin: var(--space-xs);
+    padding: var(--space-xs);
+    border-radius: var(--radius-md);
+    background-color: color-mix(in srgb, inherit 10%, opacity);
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+.sortRow {
+    cursor: pointer;
+}
+
+.modal {
+  position: fixed; 
+  inset: 0; 
+  margin: auto;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--border-dim);
+  border-radius: 6px;
+  background: var(--bg-card);
+  max-width: 400px;
+  width: 100%;
+}
+.modal[open] {
+  display: block;
+}
+.modal::backdrop {
+  background: rgba(4, 9, 18, 0.72);
+}
+.modalHeader {
+    margin-bottom: var(--space-sm);
+}
+.modalLabel {
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    margin-top: var(--space-sm);
+}
+.dirtyRow {
+  background: rgba(56, 189, 248, 0.08);
+}

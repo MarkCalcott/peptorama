@@ -1,0 +1,61 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dim);
+  border-radius: var(--radius-lg);
+  color: var(--text-secondary);
+  overflow: hidden;
+  transition: border-color var(--transition-speed);
+}
+
+.card:hover {
+  border-color: var(--border-hover);
+}
+
+.head {
+  text-transform: uppercase;
+  background: var(--bg-bar);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-md) ;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.content {
+  padding: var(--space-sm) var(--space-md);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.resizeHandle {
+  height: 6px;
+  cursor: ns-resize;
+  flex-shrink: 0;
+  position: relative;
+}
+.resizeHandle:hover {
+  border-bottom: solid 1px var(--border-active);
+}
+
+.closeButtons {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+/* For animating card hiding */
+.wrapper {
+  margin-bottom: var(--space-md);
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows var(--transition-slow) ease,
+              margin var(--transition-slow) ease,
+              opacity var(--transition-slow) ease;
+}
+.hidden {
+  grid-template-rows: 0fr;
+  margin-bottom: 0;
+  opacity: 0.5;
+}
+.hidden .card {
+  border-color: var(--bg-backdrop);
+  border-width: 0;
+}
