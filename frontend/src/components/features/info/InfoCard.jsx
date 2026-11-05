@@ -12,6 +12,25 @@ export default function InfoCard() {
       <Card id="info" title="Info">
         {render(info.params)}
         {warnings && <WarningList items={warnings} />}
+        <p>
+          Want to learn more? Read our{" "}
+          <a
+            href="https://www.biorxiv.org/content/10.64898/2026.11.03.764117v1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            preprint article
+          </a>{" "}
+          or view the{" "}
+          <a
+            href="https://github.com/MarkCalcott/peptorama"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            source code
+          </a>
+          .
+        </p>
       </Card>
     </>
   );

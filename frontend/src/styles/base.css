@@ -102,7 +102,7 @@ ul ul {
   margin: var(--space-sm) 0;
 }
 a {
-  color: var(--text-secondary);
+  color: var(--cyan);
   text-decoration: none;
 }
 
